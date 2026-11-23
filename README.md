@@ -1,5 +1,12 @@
 # re-kucing-peduli
 
+![Platform](https://img.shields.io/badge/platform-Android%2015-3DDC84?logo=android&logoColor=white)
+![Protection](https://img.shields.io/badge/FreeRASP%20v14-bypassed-red)
+![Module](https://img.shields.io/badge/Xposed-Vector%20%2F%20LSPosed-7F52FF)
+![Build](https://img.shields.io/badge/build-userspace%20(ECJ%20%2B%20D8)-informational)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-research-blue)
+
 Reverse-engineering case study of an Android streaming application protected by a
 commercial RASP (Runtime Application Self-Protection) SDK. The project documents the
 full workflow — static analysis, string/crypto recovery, native decompilation, dynamic
@@ -37,6 +44,20 @@ was performed on the author's **own device** and **own installed copy** of the a
 | **Endpoints** | `recent`, `comingsoon`, `listall`, `search`, `post`, `series`, `updateApp` mapped with parameters. |
 | **Video pipeline** | Player resolves to **DoodStream** (`playmogo.com`); full chain reversed down to the direct MP4 URL, with a working resolver script. |
 | **Tooling** | `KucingUnlock` Xposed/Vector module: RASP bypass, API/endpoint/token logger, and a WebView ad-blocker. |
+
+---
+
+## Ad-blocker — before / after
+
+The module strips the in-player ad overlays (served by rotating malvertising domains),
+the ad-instruction note, and the leftover empty ad containers.
+
+| Before | After |
+|:------:|:-----:|
+| ![before](docs/before.png) | ![after](docs/after.png) |
+
+> Screenshots are redacted — the video-preview area is blacked out; only the UI chrome
+> and the (SFW) ad creatives are shown.
 
 ---
 
@@ -157,3 +178,9 @@ The embed `id` is taken from the `post?id=` response body; see
 
 Analysis complete. Module is built, installed, and verified on-device. See the commit
 history for the incremental progression of findings and module features.
+
+## License
+
+Original work in this repository is released under the [MIT License](LICENSE).
+Third-party and decompiled artifacts are **not** covered and remain the property of
+their respective owners — see the license scope note and the disclaimer above.
