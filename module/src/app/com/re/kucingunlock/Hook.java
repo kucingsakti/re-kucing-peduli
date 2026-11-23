@@ -219,6 +219,31 @@ public class Hook implements IXposedHookLoadPackage {
             log("[ok] hook hide teks KLIK IKLAN");
         } catch (Throwable t) { log("[warn] hideNote: " + t); }
 
+        // (F) tutup SPACE kosong bekas container iklan (collapse ke GONE)
+        final String[] AD_VIEW_IDS = {
+            "cv_series2_ads", "adView", "cv_ads", "ll_ads", "rl_ads", "ad_container", "adContainer", "ad_view"
+        };
+        try {
+            XposedHelpers.findAndHookMethod("android.app.Activity", cl, "onResume",
+                new XC_MethodHook() {
+                    protected void afterHookedMethod(MethodHookParam p) {
+                        try {
+                            android.app.Activity a = (android.app.Activity) p.thisObject;
+                            for (String name : AD_VIEW_IDS) {
+                                int id = a.getResources().getIdentifier(name, "id", a.getPackageName());
+                                if (id == 0) continue;
+                                android.view.View v = a.findViewById(id);
+                                if (v != null && v.getVisibility() != android.view.View.GONE) {
+                                    v.setVisibility(android.view.View.GONE);
+                                    log("[ui] container iklan ditutup: " + name);
+                                }
+                            }
+                        } catch (Throwable e) {}
+                    }
+                });
+            log("[ok] hook tutup space iklan");
+        } catch (Throwable t) { log("[warn] hideAdView: " + t); }
+
         log("[ok] AD-BLOCK aktif");
     }
 }
