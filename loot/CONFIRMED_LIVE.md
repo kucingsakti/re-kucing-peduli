@@ -24,3 +24,14 @@ Catatan: Token = Base64.decode(getAPIKey()); AppSignature = Base64.decode(getAPI
 adb logcat -c; adb logcat -s VectorLegacyBridge | grep --line-buffered 'KUCING'
   -> [http] = URL+status tiap request (endpoint lengkap)
   -> [hdr]  = semua header (Token, AppSignature, Authorization: Bearer <token-login>)
+
+## Endpoint terkonfirmasi (live capture, {BASE}=https://api.explore...com)
+GET {BASE}/330cce.../71b8ac.../recent
+GET {BASE}/330cce.../71b8ac.../listall?letter=<0-9|A..Z>&type=hentai&page=<n>
+GET {BASE}/330cce.../71b8ac.../post?id=<postId>
+GET {BASE}/330cce.../71b8ac.../series?id=<seriesId>
+GET {BASE}/71b8ac.../updateApp        (path pendek, tanpa segmen pertama)
+
+Pola path: {URL}/{getAPIPath segmen1}/{getAPIPath segmen2}/<endpoint>
+  segmen1=330cceade91a6a9cd30fb8042222ed56  segmen2=71b8acf33b508c7543592acd9d9eb70d
+Auth: hanya header Token + AppSignature + AppBuildCode (app-level). Bearer/login belum terlihat.
