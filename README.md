@@ -1,11 +1,19 @@
 # re-kucing-peduli
 
+[![Release](https://img.shields.io/github/v/release/kucingsakti/re-kucing-peduli?label=release&logo=github&color=success)](https://github.com/kucingsakti/re-kucing-peduli/releases/latest)
+[![Download](https://img.shields.io/badge/download-KucingUnlock.apk-3DDC84?logo=android&logoColor=white)](https://github.com/kucingsakti/re-kucing-peduli/releases/latest/download/KucingUnlock-v1.0.0.apk)
+[![Downloads](https://img.shields.io/github/downloads/kucingsakti/re-kucing-peduli/total?logo=github&label=downloads)](https://github.com/kucingsakti/re-kucing-peduli/releases)
 ![Platform](https://img.shields.io/badge/platform-Android%2015-3DDC84?logo=android&logoColor=white)
 ![Protection](https://img.shields.io/badge/FreeRASP%20v14-bypassed-red)
 ![Module](https://img.shields.io/badge/Xposed-Vector%20%2F%20LSPosed-7F52FF)
 ![Build](https://img.shields.io/badge/build-userspace%20(ECJ%20%2B%20D8)-informational)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-research-blue)
+
+> **⬇️ Download:** grab the prebuilt module from the
+> **[latest release](https://github.com/kucingsakti/re-kucing-peduli/releases/latest)** —
+> [`KucingUnlock-v1.0.0.apk`](https://github.com/kucingsakti/re-kucing-peduli/releases/latest/download/KucingUnlock-v1.0.0.apk)
+> (SHA-256 `d298fbc5…0d39ef59`). Install steps are in the **KucingUnlock** section below.
 
 Reverse-engineering case study of an Android streaming application protected by a
 commercial RASP (Runtime Application Self-Protection) SDK. The project documents the
