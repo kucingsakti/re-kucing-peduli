@@ -3,3 +3,4 @@ module/build/
 *.keystore.*
 __pycache__/
 *.pyc
+dist/
