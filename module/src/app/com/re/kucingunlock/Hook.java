@@ -105,5 +105,26 @@ public class Hook implements IXposedHookLoadPackage {
                 });
             log("[ok] hook interceptor Service.a terpasang");
         } catch (Throwable t) { log("[warn] Service.a: " + t); }
+
+        // (4) URL stream/download ASLI yang dibuka (WebView.loadUrl + Intent VIEW)
+        final XC_MethodHook wv = new XC_MethodHook() {
+            protected void beforeHookedMethod(MethodHookParam p) {
+                try { log("[stream] WebView.loadUrl: " + p.args[0]); } catch (Throwable e) {}
+            }
+        };
+        try { XposedHelpers.findAndHookMethod("android.webkit.WebView", cl, "loadUrl", "java.lang.String", wv); } catch (Throwable t) { log("[warn] loadUrl1: " + t); }
+        try { XposedHelpers.findAndHookMethod("android.webkit.WebView", cl, "loadUrl", "java.lang.String", "java.util.Map", wv); } catch (Throwable t) {}
+
+        final XC_MethodHook intentUri = new XC_MethodHook() {
+            protected void beforeHookedMethod(MethodHookParam p) {
+                try {
+                    String u = String.valueOf(p.args[0]);
+                    if (u.startsWith("http")) log("[open] Intent data: " + u);
+                } catch (Throwable e) {}
+            }
+        };
+        try { XposedHelpers.findAndHookMethod("android.content.Intent", cl, "setData", "android.net.Uri", intentUri); } catch (Throwable t) { log("[warn] setData: " + t); }
+        try { XposedHelpers.findAndHookMethod("android.content.Intent", cl, "setDataAndType", "android.net.Uri", "java.lang.String", intentUri); } catch (Throwable t) {}
+        log("[ok] hook WebView/Intent stream terpasang");
     }
 }

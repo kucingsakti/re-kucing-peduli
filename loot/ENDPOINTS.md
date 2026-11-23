@@ -43,3 +43,13 @@ Blonde, Blowjob, Bondage, Cheating, Comedy, Creampie, ... (list penuh di layar C
 
 ## Belum tereksplor (koordinat drawer labil)
 - Jadwal hentai (schedule), Chat, Stiker — kemungkinan endpoint sendiri.
+
+## Endpoint tambahan (live, sesi 2)
+- `{BASE}{P}/comingsoon`   (home juga load ini)
+
+## URL STREAM ASLI (via hook WebView.loadUrl) — TERKONFIRMASI
+- Stream 1/2 membuka embed player pihak-ketiga: **https://playmogo.com/e/<id>**
+  contoh: https://playmogo.com/e/j8mrugr29nnb , https://playmogo.com/e/0osom1qldj7s
+- Iklan di player: https://linkpoi.me/appad , https://linkpoi.me/spots-res
+- Video asli (m3u8/mp4) di-resolve DI DALAM halaman playmogo.com/e/<id> (lapisan berikutnya).
+- id embed berasal dari body response `post?id=` (field download/stream).
