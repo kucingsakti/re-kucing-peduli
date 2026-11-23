@@ -1,6 +1,7 @@
 package com.re.kucingunlock;
 
 import android.util.Base64;
+import android.webkit.WebResourceResponse;
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XC_MethodReplacement;
@@ -8,24 +9,62 @@ import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
+import java.io.ByteArrayInputStream;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * KucingUnlock — Vector/Xposed module untuk com.kcstream.cing ("Kucing").
- *  (1) Bypass FreeRASP: telan broadcast ancaman (emulator/tamper/hooks) -> app jalan di root.
- *  (2) Log konfigurasi API native (getAPIUrl/Path/Key/Signature).
- *  (3) Log semua header request (Token, AppSignature, Authorization: Bearer) + URL response.
- * Lihat log:  adb logcat -s KUCING  (atau grep "KUCING")
+ *  (1) Bypass FreeRASP (emulator/tamper/hooks) -> app jalan di root.
+ *  (2) Log konfig API native + header (Token/AppSignature/Authorization) + URL.
+ *  (3) AD-BLOCK: UnityAds interstitial + iklan WebView (in-app & di video player).
+ * Log: adb logcat -s VectorLegacyBridge  (filter "KUCING").
  */
 public class Hook implements IXposedHookLoadPackage {
 
     private static final String PKG = "com.kcstream.cing";
     private static final String TAG = "KUCING";
+    private static final Set<String> HOOKED = Collections.synchronizedSet(new HashSet<String>());
 
     private static void log(String m) { XposedBridge.log(TAG + " | " + m); }
+    private static String hex(byte[] b) { StringBuilder s = new StringBuilder(); for (byte x : b) s.append(String.format("%02x", x)); return s.toString(); }
 
-    private static String hex(byte[] b) {
-        StringBuilder sb = new StringBuilder();
-        for (byte x : b) sb.append(String.format("%02x", x));
-        return sb.toString();
+    // ---- daftar iklan ----
+    private static final String[] CORE_ALLOW = {
+        "cloudatacdn.com", "playmogo.com/pass_md5", "playmogo.com/e/", "playmogo.com/push",
+        "explorethefrontier", "imgds.net", "cdnjs.cloudflare.com", "/ajax/libs/",
+        "gstatic.com", "challenges.cloudflare.com", "jsdelivr.net", "fonts.g"
+    };
+    private static final String[] AD_HOSTS = {
+        "linkpoi.me", "ydheypen.com", "googlesyndication", "googleadservices", "doubleclick",
+        "google-analytics", "googletagmanager", "unityads.unity3d.com", "applifier.com",
+        "exoclick", "juicyads", "trafficjunky", "popads", "popcash", "propellerads",
+        "adsterra", "hilltopads", "ad-maven", "clickadu", "onclicka", "poptm", "adnium",
+        "adskeeper", "mgid.com", "outbrain", "taboola", "doodcdn.io/ads"
+    };
+    private static final String[] AD_PATHS = {
+        "/ads/", "/ad.js", "/pagead", "/adsbygoogle", "/gampad", "/advertisement",
+        "/popunder", "/prebid", "/doubleclick", "/splash/"
+    };
+
+    static boolean isAd(String url) {
+        if (url == null) return false;
+        String u = url.toLowerCase();
+        boolean core = false;
+        for (String a : CORE_ALLOW) if (u.contains(a)) { core = true; break; }
+        if (core) {
+            // host inti video/api: hanya blok kalau jelas path iklan (hindari matikan player)
+            if (u.contains("/ads/") || u.contains("/ad.js") || u.contains("/pagead")) return true;
+            return false;
+        }
+        for (String h : AD_HOSTS) if (u.contains(h)) return true;
+        for (String p : AD_PATHS) if (u.contains(p)) return true;
+        return false;
+    }
+
+    private static WebResourceResponse blank() {
+        return new WebResourceResponse("text/plain", "utf-8", new ByteArrayInputStream(new byte[0]));
     }
 
     @Override
@@ -34,31 +73,23 @@ public class Hook implements IXposedHookLoadPackage {
         final ClassLoader cl = lp.classLoader;
         log("attached ke " + PKG);
 
-        // (1) BYPASS — telan reaksi ancaman FreeRASP (titik choke tunggal, di Java)
+        // (1) BYPASS FreeRASP
         try {
             XposedHelpers.findAndHookMethod("u1.c", cl, "onReceive",
                 "android.content.Context", "android.content.Intent",
                 new XC_MethodReplacement() {
                     protected Object replaceHookedMethod(MethodHookParam p) {
-                        log("[bypass] threat broadcast ditelan (onReceive dinonaktifkan)");
-                        return null;
+                        log("[bypass] threat broadcast ditelan"); return null;
                     }
                 });
-            log("[ok] hook u1.c.onReceive terpasang");
+            log("[ok] hook u1.c.onReceive");
         } catch (Throwable t) { log("[err] u1.c.onReceive: " + t); }
-
-        // (1b) Safety — matikan TimerTask yang panggil System.exit(-1)
         try {
             XposedHelpers.findAndHookMethod("D4.d", cl, "run",
-                new XC_MethodReplacement() {
-                    protected Object replaceHookedMethod(MethodHookParam p) {
-                        log("[bypass] D4.d.run (System.exit) dicegah");
-                        return null;
-                    }
-                });
-        } catch (Throwable t) { log("[warn] D4.d.run: " + t); }
+                new XC_MethodReplacement() { protected Object replaceHookedMethod(MethodHookParam p) { return null; } });
+        } catch (Throwable t) {}
 
-        // (2) Konfigurasi API native
+        // (2) Konfig API native
         final String[] getters = {"getAPIUrl", "getAPIPath", "getAPIKey", "getAPISignature"};
         for (final String g : getters) {
             try {
@@ -66,65 +97,113 @@ public class Hook implements IXposedHookLoadPackage {
                     new XC_MethodHook() {
                         protected void afterHookedMethod(MethodHookParam p) {
                             try {
-                                Object r = p.getResult();
-                                String s = String.valueOf(r);
+                                String s = String.valueOf(p.getResult());
                                 log("[api] " + g + "() = " + s);
                                 if ("getAPIKey".equals(g) || "getAPISignature".equals(g)) {
-                                    byte[] dec = Base64.decode(s, 0);
-                                    log("[api] " + g + " decoded: str=" + new String(dec) + " | hex=" + hex(dec));
+                                    byte[] d = Base64.decode(s, 0);
+                                    log("[api] " + g + " decoded: str=" + new String(d) + " | hex=" + hex(d));
                                 }
-                            } catch (Throwable e) { log("[err] " + g + " post: " + e); }
+                            } catch (Throwable e) {}
                         }
                     });
             } catch (Throwable t) { log("[err] hook " + g + ": " + t); }
         }
 
-        // (3a) Semua header request (Token, AppSignature, AppBuildCode, Authorization: Bearer <token>)
+        // (3a) Semua header request
         try {
-            XposedHelpers.findAndHookMethod("Fa.e", cl, "g",
-                "java.lang.String", "java.lang.String",
+            XposedHelpers.findAndHookMethod("Fa.e", cl, "g", "java.lang.String", "java.lang.String",
                 new XC_MethodHook() {
                     protected void beforeHookedMethod(MethodHookParam p) {
-                        try {
-                            log("[hdr] " + p.args[0] + ": " + p.args[1]);
-                        } catch (Throwable e) {}
+                        try { log("[hdr] " + p.args[0] + ": " + p.args[1]); } catch (Throwable e) {}
                     }
                 });
-            log("[ok] hook header-builder Fa.e.g terpasang");
         } catch (Throwable t) { log("[warn] Fa.e.g: " + t); }
 
-        // (3b) URL + status tiap request (interceptor app -> Response.toString() memuat url)
+        // (3b) URL + status request
         try {
             XposedHelpers.findAndHookMethod("com.kcstream.cing.api.Service", cl, "a",
                 "com.kcstream.cing.api.Service", "ca.f",
                 new XC_MethodHook() {
                     protected void afterHookedMethod(MethodHookParam p) {
-                        try { log("[http] " + String.valueOf(p.getResult())); }
-                        catch (Throwable e) {}
+                        try { log("[http] " + String.valueOf(p.getResult())); } catch (Throwable e) {}
                     }
                 });
-            log("[ok] hook interceptor Service.a terpasang");
         } catch (Throwable t) { log("[warn] Service.a: " + t); }
 
-        // (4) URL stream/download ASLI yang dibuka (WebView.loadUrl + Intent VIEW)
-        final XC_MethodHook wv = new XC_MethodHook() {
-            protected void beforeHookedMethod(MethodHookParam p) {
-                try { log("[stream] WebView.loadUrl: " + p.args[0]); } catch (Throwable e) {}
-            }
-        };
-        try { XposedHelpers.findAndHookMethod("android.webkit.WebView", cl, "loadUrl", "java.lang.String", wv); } catch (Throwable t) { log("[warn] loadUrl1: " + t); }
-        try { XposedHelpers.findAndHookMethod("android.webkit.WebView", cl, "loadUrl", "java.lang.String", "java.util.Map", wv); } catch (Throwable t) {}
+        // ===================== AD-BLOCK =====================
 
-        final XC_MethodHook intentUri = new XC_MethodHook() {
+        // (A) UnityAds interstitial -> no-op (iklan in-app di luar player)
+        try {
+            Class<?> ua = XposedHelpers.findClass("com.unity3d.ads.UnityAds", cl);
+            XposedBridge.hookAllMethods(ua, "show", new XC_MethodReplacement() {
+                protected Object replaceHookedMethod(MethodHookParam p) { log("[ad] UnityAds.show diblok"); return null; }
+            });
+            log("[ok] UnityAds.show diblok");
+        } catch (Throwable t) { log("[warn] UnityAds: " + t); }
+
+        // (B) WebView: intercept resource iklan (in-app banner + di player)
+        final XC_MethodHook intercept = new XC_MethodHook() {
             protected void beforeHookedMethod(MethodHookParam p) {
                 try {
-                    String u = String.valueOf(p.args[0]);
-                    if (u.startsWith("http")) log("[open] Intent data: " + u);
+                    Object rq = p.args[1];
+                    String url = (rq instanceof String) ? (String) rq
+                                 : String.valueOf(XposedHelpers.callMethod(rq, "getUrl"));
+                    if (isAd(url)) { p.setResult(blank()); }
                 } catch (Throwable e) {}
             }
         };
-        try { XposedHelpers.findAndHookMethod("android.content.Intent", cl, "setData", "android.net.Uri", intentUri); } catch (Throwable t) { log("[warn] setData: " + t); }
-        try { XposedHelpers.findAndHookMethod("android.content.Intent", cl, "setDataAndType", "android.net.Uri", "java.lang.String", intentUri); } catch (Throwable t) {}
-        log("[ok] hook WebView/Intent stream terpasang");
+        // client default (tak di-override)
+        try { XposedHelpers.findAndHookMethod("android.webkit.WebViewClient", cl, "shouldInterceptRequest",
+                "android.webkit.WebView", "android.webkit.WebResourceRequest", intercept); } catch (Throwable t) {}
+        try { XposedHelpers.findAndHookMethod("android.webkit.WebViewClient", cl, "shouldInterceptRequest",
+                "android.webkit.WebView", "java.lang.String", intercept); } catch (Throwable t) {}
+        // client kustom app (mis. BrowserActivity) -> tangkap via setWebViewClient
+        try {
+            XposedHelpers.findAndHookMethod("android.webkit.WebView", cl, "setWebViewClient",
+                "android.webkit.WebViewClient", new XC_MethodHook() {
+                    protected void beforeHookedMethod(MethodHookParam p) {
+                        try {
+                            Object c = p.args[0]; if (c == null) return;
+                            String cn = c.getClass().getName();
+                            if (HOOKED.add(cn)) {
+                                try { XposedHelpers.findAndHookMethod(c.getClass(), "shouldInterceptRequest",
+                                        "android.webkit.WebView", "android.webkit.WebResourceRequest", intercept); } catch (Throwable e) {}
+                                try { XposedHelpers.findAndHookMethod(c.getClass(), "shouldInterceptRequest",
+                                        "android.webkit.WebView", "java.lang.String", intercept); } catch (Throwable e) {}
+                                log("[ad] intercept dipasang di client " + cn);
+                            }
+                        } catch (Throwable e) {}
+                    }
+                });
+            log("[ok] hook setWebViewClient (adblock)");
+        } catch (Throwable t) { log("[warn] setWebViewClient: " + t); }
+
+        // (C) WebView.loadUrl -> log stream + blok navigasi iklan
+        final XC_MethodHook wv = new XC_MethodHook() {
+            protected void beforeHookedMethod(MethodHookParam p) {
+                try {
+                    String u = String.valueOf(p.args[0]);
+                    if (isAd(u)) { p.setResult(null); log("[ad] loadUrl diblok: " + u); return; }
+                    log("[stream] WebView.loadUrl: " + u);
+                } catch (Throwable e) {}
+            }
+        };
+        try { XposedHelpers.findAndHookMethod("android.webkit.WebView", cl, "loadUrl", "java.lang.String", wv); } catch (Throwable t) {}
+        try { XposedHelpers.findAndHookMethod("android.webkit.WebView", cl, "loadUrl", "java.lang.String", "java.util.Map", wv); } catch (Throwable t) {}
+
+        // (D) blok buka iklan ke browser eksternal (Intent VIEW ke host iklan)
+        final XC_MethodHook saHook = new XC_MethodHook() {
+            protected void beforeHookedMethod(MethodHookParam p) {
+                try {
+                    Object intent = p.args[0];
+                    Object d = XposedHelpers.callMethod(intent, "getDataString");
+                    if (d != null && isAd(String.valueOf(d))) { p.setResult(null); log("[ad] open-ext diblok: " + d); }
+                } catch (Throwable e) {}
+            }
+        };
+        try { XposedHelpers.findAndHookMethod("android.app.Activity", cl, "startActivity", "android.content.Intent", saHook); } catch (Throwable t) {}
+        try { XposedHelpers.findAndHookMethod("android.app.Activity", cl, "startActivity", "android.content.Intent", "android.os.Bundle", saHook); } catch (Throwable t) {}
+
+        log("[ok] AD-BLOCK aktif");
     }
 }
