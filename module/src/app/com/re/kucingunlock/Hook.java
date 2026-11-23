@@ -199,6 +199,26 @@ public class Hook implements IXposedHookLoadPackage {
         try { XposedHelpers.findAndHookMethod("android.app.Activity", cl, "startActivity", "android.content.Intent", saHook); } catch (Throwable t) {}
         try { XposedHelpers.findAndHookMethod("android.app.Activity", cl, "startActivity", "android.content.Intent", "android.os.Bundle", saHook); } catch (Throwable t) {}
 
+        // (E) sembunyikan teks instruksi iklan "KLIK IKLAN ATAU TOMBOL X..." (id/tx_streamNote,
+        //     di-set dari field 'note' server). Hook setText -> GONE bila berisi teks itu.
+        try {
+            XposedBridge.hookAllMethods(XposedHelpers.findClass("android.widget.TextView", cl), "setText",
+                new XC_MethodHook() {
+                    protected void afterHookedMethod(MethodHookParam p) {
+                        try {
+                            if (p.args.length > 0 && p.args[0] != null) {
+                                String t = p.args[0].toString();
+                                if (t.contains("MENGHILANGKAN IKLAN") || t.contains("KLIK IKLAN")) {
+                                    ((android.view.View) p.thisObject).setVisibility(android.view.View.GONE);
+                                    log("[ui] teks iklan disembunyikan");
+                                }
+                            }
+                        } catch (Throwable e) {}
+                    }
+                });
+            log("[ok] hook hide teks KLIK IKLAN");
+        } catch (Throwable t) { log("[warn] hideNote: " + t); }
+
         log("[ok] AD-BLOCK aktif");
     }
 }
