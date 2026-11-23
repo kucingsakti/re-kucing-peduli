@@ -13,7 +13,7 @@
 > **⬇️ Download:** grab the prebuilt module from the
 > **[latest release](https://github.com/kucingsakti/re-kucing-peduli/releases/latest)** —
 > [`KucingUnlock-v1.0.0.apk`](https://github.com/kucingsakti/re-kucing-peduli/releases/latest/download/KucingUnlock-v1.0.0.apk)
-> (SHA-256 `d298fbc5…0d39ef59`). Install steps are in the **KucingUnlock** section below.
+> (SHA-256 `28e3a9aa…49b55e`). Install steps are in the **KucingUnlock** section below.
 
 Reverse-engineering case study of an Android streaming application protected by a
 commercial RASP (Runtime Application Self-Protection) SDK. The project documents the
