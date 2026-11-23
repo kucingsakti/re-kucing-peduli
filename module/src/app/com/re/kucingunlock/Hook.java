@@ -219,31 +219,45 @@ public class Hook implements IXposedHookLoadPackage {
             log("[ok] hook hide teks KLIK IKLAN");
         } catch (Throwable t) { log("[warn] hideNote: " + t); }
 
-        // (F) tutup SPACE kosong bekas container iklan (collapse ke GONE)
-        final String[] AD_VIEW_IDS = {
-            "cv_series2_ads", "adView", "cv_ads", "ll_ads", "rl_ads", "ad_container", "adContainer", "ad_view"
-        };
+        // (F) tutup SPACE kosong bekas container iklan di SEMUA layar (scan view-tree -> GONE)
         try {
             XposedHelpers.findAndHookMethod("android.app.Activity", cl, "onResume",
                 new XC_MethodHook() {
                     protected void afterHookedMethod(MethodHookParam p) {
                         try {
                             android.app.Activity a = (android.app.Activity) p.thisObject;
-                            for (String name : AD_VIEW_IDS) {
-                                int id = a.getResources().getIdentifier(name, "id", a.getPackageName());
-                                if (id == 0) continue;
-                                android.view.View v = a.findViewById(id);
-                                if (v != null && v.getVisibility() != android.view.View.GONE) {
-                                    v.setVisibility(android.view.View.GONE);
-                                    log("[ui] container iklan ditutup: " + name);
-                                }
-                            }
+                            collapseAds(a.getWindow().getDecorView());
                         } catch (Throwable e) {}
                     }
                 });
-            log("[ok] hook tutup space iklan");
+            log("[ok] hook tutup space iklan (scan)");
         } catch (Throwable t) { log("[warn] hideAdView: " + t); }
 
         log("[ok] AD-BLOCK aktif");
+    }
+
+    // GONE-kan view yang id resource-nya mengandung "ads"/"adview" (container iklan)
+    private static void collapseAds(android.view.View v) {
+        try {
+            int id = v.getId();
+            if (id != android.view.View.NO_ID) {
+                String name = null;
+                try { name = v.getResources().getResourceEntryName(id); } catch (Throwable e) {}
+                if (name != null) {
+                    String n = name.toLowerCase();
+                    if (n.contains("ads") || n.contains("adview") || n.equals("adview")) {
+                        if (v.getVisibility() != android.view.View.GONE) {
+                            v.setVisibility(android.view.View.GONE);
+                            log("[ui] container iklan GONE: " + name);
+                        }
+                        return; // tak perlu telusuri anak container yg sudah disembunyikan
+                    }
+                }
+            }
+            if (v instanceof android.view.ViewGroup) {
+                android.view.ViewGroup g = (android.view.ViewGroup) v;
+                for (int i = 0; i < g.getChildCount(); i++) collapseAds(g.getChildAt(i));
+            }
+        } catch (Throwable e) {}
     }
 }
