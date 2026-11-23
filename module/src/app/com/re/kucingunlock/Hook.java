@@ -30,37 +30,32 @@ public class Hook implements IXposedHookLoadPackage {
     private static void log(String m) { XposedBridge.log(TAG + " | " + m); }
     private static String hex(byte[] b) { StringBuilder s = new StringBuilder(); for (byte x : b) s.append(String.format("%02x", x)); return s.toString(); }
 
-    // ---- daftar iklan ----
-    private static final String[] CORE_ALLOW = {
-        "cloudatacdn.com", "playmogo.com/pass_md5", "playmogo.com/e/", "playmogo.com/push",
-        "explorethefrontier", "imgds.net", "cdnjs.cloudflare.com", "/ajax/libs/",
-        "gstatic.com", "challenges.cloudflare.com", "jsdelivr.net", "fonts.g"
+    // ---- ADBLOCK: allowlist (deny-by-default) ----
+    // Iklan NekoPoi/DoodStream pakai domain acak yang BERPUTAR tiap load, jadi denylist
+    // takkan cukup. Kita izinkan hanya host yang benar-benar dibutuhkan player/API/chat;
+    // semua host pihak-ketiga lain di WebView = iklan/tracker -> blok.
+    private static final String[] ALLOW_HOSTS = {
+        // video player (embed + CDN video + gambar)
+        "playmogo.com", "doodcdn.io", "cloudatacdn.com", "imgds.net", "dood.",
+        // library player + cloudflare turnstile/insights
+        "cdnjs.cloudflare.com", "challenges.cloudflare.com", "cloudflareinsights.com",
+        "jsdelivr.net", "unpkg.com", "ytimg.com",
+        // google (font/cast/recaptcha/login player) — BUKAN googlesyndication/doubleclick
+        "gstatic.com", "googleapis.com", "accounts.google.com", "recaptcha",
+        // chat + API app + watermark
+        "chatango.com", "explorethefrontier", "nekopoi"
     };
-    private static final String[] AD_HOSTS = {
-        "linkpoi.me", "ydheypen.com", "googlesyndication", "googleadservices", "doubleclick",
-        "google-analytics", "googletagmanager", "unityads.unity3d.com", "applifier.com",
-        "exoclick", "juicyads", "trafficjunky", "popads", "popcash", "propellerads",
-        "adsterra", "hilltopads", "ad-maven", "clickadu", "onclicka", "poptm", "adnium",
-        "adskeeper", "mgid.com", "outbrain", "taboola", "doodcdn.io/ads"
-    };
-    private static final String[] AD_PATHS = {
-        "/ads/", "/ad.js", "/pagead", "/adsbygoogle", "/gampad", "/advertisement",
-        "/popunder", "/prebid", "/doubleclick", "/splash/"
-    };
+    // path iklan yg tetap diblok walau host-nya diizinkan (mis. doodcdn.io/ads/ad.js)
+    private static final String[] AD_PATHS = { "/ads/", "/ad.js", "/pagead", "/adsbygoogle", "/gampad" };
 
     static boolean isAd(String url) {
         if (url == null) return false;
         String u = url.toLowerCase();
-        boolean core = false;
-        for (String a : CORE_ALLOW) if (u.contains(a)) { core = true; break; }
-        if (core) {
-            // host inti video/api: hanya blok kalau jelas path iklan (hindari matikan player)
-            if (u.contains("/ads/") || u.contains("/ad.js") || u.contains("/pagead")) return true;
-            return false;
-        }
-        for (String h : AD_HOSTS) if (u.contains(h)) return true;
-        for (String p : AD_PATHS) if (u.contains(p)) return true;
-        return false;
+        if (u.startsWith("data:") || u.startsWith("about:") || u.startsWith("blob:")
+                || u.startsWith("file:") || u.startsWith("javascript:")) return false;
+        for (String p : AD_PATHS) if (u.contains(p)) return true;     // selalu blok path iklan
+        for (String a : ALLOW_HOSTS) if (u.contains(a)) return false; // host dikenal -> izinkan
+        return true;                                                  // sisanya -> blok (iklan/tracker)
     }
 
     private static WebResourceResponse blank() {
