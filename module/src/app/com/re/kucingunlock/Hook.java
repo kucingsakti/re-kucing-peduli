@@ -125,6 +125,35 @@ public class Hook implements IXposedHookLoadPackage {
                 });
         } catch (Throwable t) { log("[warn] Service.a: " + t); }
 
+        // (3c) BODY (decoded): Gson instansiasi model via Unsafe (konstruktor TAK dipanggil),
+        //      jadi hook getter yang PASTI dipanggil saat render detail:
+        //      Posts.getDownload() -> nama asli di dex = "c". toString() memuat seluruh field
+        //      (stream=[...] & download=[...] lengkap type + name + link). Dedupe per objek.
+        try {
+            final Set<Integer> seenPosts = Collections.synchronizedSet(new HashSet<Integer>());
+            XposedHelpers.findAndHookMethod("com.kcstream.cing.model.Posts", cl, "c",
+                new XC_MethodHook() {
+                    protected void afterHookedMethod(MethodHookParam p) {
+                        try {
+                            Object o = p.thisObject;
+                            if (o == null || !seenPosts.add(System.identityHashCode(o))) return;
+                            Object dl = p.getResult();                        // = download list
+                            Object st = XposedHelpers.getObjectField(o, "stream");
+                            int nd = (dl instanceof java.util.List) ? ((java.util.List) dl).size() : -1;
+                            int ns = (st instanceof java.util.List) ? ((java.util.List) st).size() : -1;
+                            Object id = XposedHelpers.getObjectField(o, "id");
+                            // Cetak list stream & download TERPISAH (field 'content' HTML besar
+                            // bikin toString penuh kepotong limit baris logcat). Ini yang kita mau:
+                            // PostsDownload(type, links=[PostsDownloadLinks(name, link), ...]).
+                            log("[post] id=" + id + " stream=" + ns + " download=" + nd);
+                            log("[stream] " + String.valueOf(st));
+                            log("[download] " + String.valueOf(dl));
+                        } catch (Throwable e) {}
+                    }
+                });
+            log("[ok] hook Posts.getDownload (body logger)");
+        } catch (Throwable t) { log("[warn] Posts.getDownload: " + t); }
+
         // ===================== AD-BLOCK =====================
 
         // (A) UnityAds interstitial -> no-op (iklan in-app di luar player)
@@ -245,7 +274,7 @@ public class Hook implements IXposedHookLoadPackage {
                 try { name = v.getResources().getResourceEntryName(id); } catch (Throwable e) {}
                 if (name != null) {
                     String n = name.toLowerCase();
-                    if (n.contains("ads") || n.contains("adview") || n.equals("adview")) {
+                    if (looksLikeAd(n)) {
                         if (v.getVisibility() != android.view.View.GONE) {
                             v.setVisibility(android.view.View.GONE);
                             log("[ui] container iklan GONE: " + name);
@@ -259,5 +288,22 @@ public class Hook implements IXposedHookLoadPackage {
                 for (int i = 0; i < g.getChildCount(); i++) collapseAds(g.getChildAt(i));
             }
         } catch (Throwable e) {}
+    }
+
+    // Match id iklan berbasis TOKEN, bukan substring. Mencegah false-positive:
+    // "downloads"/"cv_downloads"/"bottom_navigation_downloads" mengandung "ads"
+    // tapi BUKAN iklan (itu UI Unduhan). Token di-split pada non-alfanumerik.
+    private static boolean looksLikeAd(String n) {
+        if (n.contains("download")) return false; // lindungi fitur Unduhan
+        for (String tok : n.split("[^a-z0-9]+")) {
+            if (tok.equals("ad") || tok.equals("ads") || tok.equals("adview")
+                || tok.equals("admob") || tok.equals("adbanner") || tok.equals("adcontainer")
+                || tok.equals("adlayout") || tok.equals("adcontent")
+                || tok.startsWith("adview") || tok.startsWith("admob")
+                || tok.startsWith("adbanner") || tok.startsWith("adcontainer")) {
+                return true;
+            }
+        }
+        return false;
     }
 }
