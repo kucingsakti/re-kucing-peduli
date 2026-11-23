@@ -1,0 +1,18 @@
+package V0;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface n {
+    void a(p pVar);
+
+    void b();
+
+    void c();
+
+    void d(p pVar);
+
+    void e(p pVar);
+
+    void f(p pVar);
+
+    void g(p pVar);
+}

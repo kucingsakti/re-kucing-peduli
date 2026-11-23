@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:padding="16.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textSize="16.0sp" android:id="@id/tv_genre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Genre" />
+        <com.google.android.material.chip.ChipGroup android:id="@id/cg_genre" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_below="@id/tv_genre" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/cg_genre">
+            <com.google.android.material.button.MaterialButton android:id="@id/bt_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cari" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,136 @@
+.class public final Lcom/onesignal/notifications/internal/data/impl/b$i$a;
+.super Lv8/k;
+.source "SourceFile"
+
+# interfaces
+.implements Lu8/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/onesignal/notifications/internal/data/impl/b$i;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic $recentId:Lv8/t;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lv8/t;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lv8/t;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lv8/t;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/onesignal/notifications/internal/data/impl/b$i$a;->$recentId:Lv8/t;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    invoke-direct {p0, p1}, Lv8/k;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, La5/a;
+
+    invoke-virtual {p0, p1}, Lcom/onesignal/notifications/internal/data/impl/b$i$a;->invoke(La5/a;)V
+
+    sget-object p1, Lh8/m;->a:Lh8/m;
+
+    return-object p1
+.end method
+
+.method public final invoke(La5/a;)V
+    .locals 2
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lv8/i;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    invoke-interface {p1}, La5/a;->moveToFirst()Z
+
+    move-result v0
+
+    .line 3
+    iget-object v1, p0, Lcom/onesignal/notifications/internal/data/impl/b$i$a;->$recentId:Lv8/t;
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    const-string v0, "android_notification_id"
+
+    invoke-interface {p1, v0}, La5/a;->getInt(Ljava/lang/String;)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    .line 5
+    :goto_0
+    iput-object p1, v1, Lv8/t;->s:Ljava/lang/Object;
+
+    return-void
+.end method

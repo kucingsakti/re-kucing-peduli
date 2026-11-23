@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_bookmark_type_all" android:title="Semua" />
+    <item android:icon="@drawable/ic_rounded_bookmark" android:id="@id/menu_bookmark_type_series" android:title="Series" />
+    <item android:icon="@drawable/ic_rounded_bookmark" android:id="@id/menu_bookmark_type_episodes" android:title="Episode" />
+</menu>

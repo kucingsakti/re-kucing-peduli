@@ -1,0 +1,10 @@
+package p;
+
+import android.graphics.Typeface;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class S {
+    public static Typeface a(Typeface typeface, int i10, boolean z6) {
+        return Typeface.create(typeface, i10, z6);
+    }
+}

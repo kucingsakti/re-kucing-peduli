@@ -1,0 +1,52 @@
+D/VectorZygiskBridge( 4753): onTransact: action=GET_BINDER, callerUid=10223
+W/BpBinder(21069): Linking to death on org.matrix.vector.ipc.IFrameworkService but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+V/VectorDeopter(21069): Skipping deopt for android.app.Instrumentation#newApplication: android.app.Instrumentation.newApplication [class java.lang.ClassLoader, class android.content.Context]
+V/Vector  (21069): Loading Vector/Xposed for com.kcstream.cing (UID: 10223)
+V/VectorLegacyBridge(21069): Loading legacy module com.re.kucingunlock from /data/app/~~qBfln1pwnvGsg-fi9hiF3g==/com.re.kucingunlock-lwmWbc_6SSomqMXAEfi5qA==/base.apk
+V/VectorLegacyBridge(21069):   Loading class com.re.kucingunlock.Hook
+I/VectorLegacyBridge(21069): KUCING | attached ke com.kcstream.cing
+I/VectorLegacyBridge(21069): KUCING | [ok] hook u1.c.onReceive terpasang
+I/VectorLegacyBridge(21069): KUCING | [ok] hook header-builder Fa.e.g terpasang
+I/VectorLegacyBridge(21069): KUCING | [ok] hook interceptor Service.a terpasang
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIUrl() = aHR0cHM6Ly9hcGkuZXhwbG9yZXRoZWZyb250aWVyZm9ybGltaXRsZXNzaW1hZ2luYXRpb25hbmRkaXNjb3YuY29t
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIPath() = MzMwY2NlYWRlOTFhNmE5Y2QzMGZiODA0MjIyMmVkNTYvNzFiOGFjZjMzYjUwOGM3NTQzNTkyYWNkOWQ5ZWI3MGQ=
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIKey() = WGJHU0ZrUXNKWWJGQzZwY1VNQ0ZMNG9OSFVMdkhVN1dkREFYWWdwbXFZbGg3cDVaQ1E0UVoxM0dEZ293aU9HdkFlano5WDVINkRZdkVRQk1yYzNBMTdTTzNxd0x3VmtibjZZWQ==
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIKey decoded: str=XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY | hex=58624753466b51734a59624643367063554d43464c346f4e48554c7648553757644441585967706d71596c683770355a435134515a31334744676f77694f477641656a7a39583548364459764551424d726333413137534f3371774c77566b626e365959
+I/VectorLegacyBridge(21069): KUCING | [hdr] Token: XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY
+I/VectorLegacyBridge(21069): KUCING | [hdr] Accept: application/json
+I/VectorLegacyBridge(21069): KUCING | [hdr] AppBuildCode: 25301
+I/VectorLegacyBridge(21069): KUCING | [api] getAPISignature() = cE9wbG04SURFREdYTjU1SWFZb2hROEN6SkZ2V3NmWHloR3Z3UFJEOWtXZ3pZU1J1dXZBT1Bmc0UwQUpiSFZiQUp5V0dzR0NOVUl1UUxKN0hiTWJ1RkxNV3dEZ0hOd3hPcllNSA==
+I/VectorLegacyBridge(21069): KUCING | [api] getAPISignature decoded: str=pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH | hex=704f706c6d384944454447584e35354961596f685138437a4a4676577366587968477677505244396b57677a595352757576414f5066734530414a62485662414a7957477347434e554975514c4a3748624d6275464c4d57774467484e77784f72594d48
+I/VectorLegacyBridge(21069): KUCING | [hdr] AppSignature: pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH
+I/VectorLegacyBridge(21069): KUCING | [bypass] threat broadcast ditelan (onReceive dinonaktifkan)
+I/VectorLegacyBridge(21069): KUCING | [http] Response{protocol=h2, code=200, message=, url=https://api.explorethefrontierforlimitlessimaginationanddiscov.com/71b8acf33b508c7543592acd9d9eb70d/updateApp}
+D/AlphabeticIndexCompat( 5357): computeSectionName: cs: Kucing sectionName: K
+I/VectorLegacyBridge(21069): KUCING | [bypass] threat broadcast ditelan (onReceive dinonaktifkan)
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIUrl() = aHR0cHM6Ly9hcGkuZXhwbG9yZXRoZWZyb250aWVyZm9ybGltaXRsZXNzaW1hZ2luYXRpb25hbmRkaXNjb3YuY29t
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIPath() = MzMwY2NlYWRlOTFhNmE5Y2QzMGZiODA0MjIyMmVkNTYvNzFiOGFjZjMzYjUwOGM3NTQzNTkyYWNkOWQ5ZWI3MGQ=
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIUrl() = aHR0cHM6Ly9hcGkuZXhwbG9yZXRoZWZyb250aWVyZm9ybGltaXRsZXNzaW1hZ2luYXRpb25hbmRkaXNjb3YuY29t
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIPath() = MzMwY2NlYWRlOTFhNmE5Y2QzMGZiODA0MjIyMmVkNTYvNzFiOGFjZjMzYjUwOGM3NTQzNTkyYWNkOWQ5ZWI3MGQ=
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIUrl() = aHR0cHM6Ly9hcGkuZXhwbG9yZXRoZWZyb250aWVyZm9ybGltaXRsZXNzaW1hZ2luYXRpb25hbmRkaXNjb3YuY29t
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIPath() = MzMwY2NlYWRlOTFhNmE5Y2QzMGZiODA0MjIyMmVkNTYvNzFiOGFjZjMzYjUwOGM3NTQzNTkyYWNkOWQ5ZWI3MGQ=
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIKey() = WGJHU0ZrUXNKWWJGQzZwY1VNQ0ZMNG9OSFVMdkhVN1dkREFYWWdwbXFZbGg3cDVaQ1E0UVoxM0dEZ293aU9HdkFlano5WDVINkRZdkVRQk1yYzNBMTdTTzNxd0x3VmtibjZZWQ==
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIKey decoded: str=XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY | hex=58624753466b51734a59624643367063554d43464c346f4e48554c7648553757644441585967706d71596c683770355a435134515a31334744676f77694f477641656a7a39583548364459764551424d726333413137534f3371774c77566b626e365959
+I/VectorLegacyBridge(21069): KUCING | [hdr] Token: XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY
+I/VectorLegacyBridge(21069): KUCING | [hdr] Accept: application/json
+I/VectorLegacyBridge(21069): KUCING | [hdr] AppBuildCode: 25301
+I/VectorLegacyBridge(21069): KUCING | [api] getAPISignature() = cE9wbG04SURFREdYTjU1SWFZb2hROEN6SkZ2V3NmWHloR3Z3UFJEOWtXZ3pZU1J1dXZBT1Bmc0UwQUpiSFZiQUp5V0dzR0NOVUl1UUxKN0hiTWJ1RkxNV3dEZ0hOd3hPcllNSA==
+I/VectorLegacyBridge(21069): KUCING | [api] getAPISignature decoded: str=pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH | hex=704f706c6d384944454447584e35354961596f685138437a4a4676577366587968477677505244396b57677a595352757576414f5066734530414a62485662414a7957477347434e554975514c4a3748624d6275464c4d57774467484e77784f72594d48
+I/VectorLegacyBridge(21069): KUCING | [hdr] AppSignature: pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIKey() = WGJHU0ZrUXNKWWJGQzZwY1VNQ0ZMNG9OSFVMdkhVN1dkREFYWWdwbXFZbGg3cDVaQ1E0UVoxM0dEZ293aU9HdkFlano5WDVINkRZdkVRQk1yYzNBMTdTTzNxd0x3VmtibjZZWQ==
+I/VectorLegacyBridge(21069): KUCING | [api] getAPIKey decoded: str=XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY | hex=58624753466b51734a59624643367063554d43464c346f4e48554c7648553757644441585967706d71596c683770355a435134515a31334744676f77694f477641656a7a39583548364459764551424d726333413137534f3371774c77566b626e365959
+I/VectorLegacyBridge(21069): KUCING | [hdr] Token: XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY
+I/VectorLegacyBridge(21069): KUCING | [hdr] Accept: application/json
+I/VectorLegacyBridge(21069): KUCING | [hdr] AppBuildCode: 25301
+I/VectorLegacyBridge(21069): KUCING | [api] getAPISignature() = cE9wbG04SURFREdYTjU1SWFZb2hROEN6SkZ2V3NmWHloR3Z3UFJEOWtXZ3pZU1J1dXZBT1Bmc0UwQUpiSFZiQUp5V0dzR0NOVUl1UUxKN0hiTWJ1RkxNV3dEZ0hOd3hPcllNSA==
+I/VectorLegacyBridge(21069): KUCING | [api] getAPISignature decoded: str=pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH | hex=704f706c6d384944454447584e35354961596f685138437a4a4676577366587968477677505244396b57677a595352757576414f5066734530414a62485662414a7957477347434e554975514c4a3748624d6275464c4d57774467484e77784f72594d48
+I/VectorLegacyBridge(21069): KUCING | [hdr] AppSignature: pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH
+I/VectorLegacyBridge(21069): KUCING | [http] Response{protocol=h2, code=200, message=, url=https://api.explorethefrontierforlimitlessimaginationanddiscov.com/330cceade91a6a9cd30fb8042222ed56/71b8acf33b508c7543592acd9d9eb70d/recent}
+I/VectorLegacyBridge(21069): KUCING | [bypass] threat broadcast ditelan (onReceive dinonaktifkan)
+I/VectorLegacyBridge(21069): KUCING | [bypass] threat broadcast ditelan (onReceive dinonaktifkan)
+I/VectorLegacyBridge(21069): KUCING | [http] Response{protocol=h2, code=200, message=, url=https://api.explorethefrontierforlimitlessimaginationanddiscov.com/71b8acf33b508c7543592acd9d9eb70d/updateApp}
+I/VectorLegacyBridge(21069): KUCING | [bypass] threat broadcast ditelan (onReceive dinonaktifkan)
+I/VectorLegacyBridge(21069): KUCING | [bypass] threat broadcast ditelan (onReceive dinonaktifkan)

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_c_downloading" android:id="@id/action_download_list" android:visible="false" android:title="Download List" app:iconTint="@android:color/white" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_c_search" android:id="@id/action_search" android:title="Cari" app:iconTint="@android:color/white" app:showAsAction="ifRoom" />
+</menu>

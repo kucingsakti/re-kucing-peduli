@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/search_item_image" android:background="@drawable/outline_rounded" android:layout_width="85.0dip" android:layout_height="55.0dip" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="10.0dip">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/textAppereance.body" android:textSize="14.0sp" android:ellipsize="end" android:id="@id/search_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip">
+            <com.google.android.material.textview.MaterialTextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/search_item_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="5.0dip" android:drawableStart="@drawable/ic_c_post_date" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.material.appbar.MaterialToolbar android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout android:id="@id/rl_no_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_no_data" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/ic_c_comments" android:layout_centerHorizontal="true" app:tint="#ff7a7a7a" />
+            <com.google.android.material.textview.MaterialTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Tidak ada komentar" android:layout_below="@id/iv_no_data" />
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="vertical" android:id="@id/rl_write" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/login_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+                        <com.google.android.material.button.MaterialButton android:id="@id/login_to_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Login to Disqus" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/write_comment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_below="@id/login_layout">
+                        <com.google.android.material.textfield.TextInputLayout android:id="@id/tx_message_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Tulis komentar" app:counterEnabled="true" app:counterMaxLength="300" app:errorEnabled="true" app:helperTextEnabled="true">
+                            <com.google.android.material.textfield.TextInputEditText android:id="@id/tx_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.button.MaterialButton android:textAppearance="@style/textAppereance.body" android:id="@id/bt_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kirim sob" android:layout_below="@id/tx_message_layout" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <ProgressBar android:id="@id/pb_progress" android:padding="16.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_below="@id/rl_write" android:layout_centerHorizontal="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_comments" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_write" android:overScrollMode="never" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_open_browser_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/ic_c_browser" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:backgroundTint="?colorPrimary" app:borderWidth="0.0dip" app:tint="@android:color/white" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

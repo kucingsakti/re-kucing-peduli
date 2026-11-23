@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kcstream.cing.library.CircleProgressBar android:id="@id/pb_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:layout_alignParentStart="true" app:max="100" app:progress="0" app:progressBarThickness="3.0dip" app:progressbarColor="@color/colorPrimary" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/pb_progress">
+        <TextView android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="title" android:maxLines="2" android:layout_alignParentStart="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_name" android:layout_alignParentStart="true">
+            <TextView android:textSize="12.0sp" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" android:drawablePadding="2.0dip" app:drawableStartCompat="@drawable/ic_c_time" />
+            <TextView android:textSize="12.0sp" android:id="@id/tv_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" android:drawablePadding="2.0dip" android:layout_marginStart="10.0dip" app:drawableStartCompat="@drawable/ic_c_file_downloaded" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

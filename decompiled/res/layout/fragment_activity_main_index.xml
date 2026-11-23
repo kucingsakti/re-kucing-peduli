@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:fadeScrollbars="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:elevation="0.0dip" app:layout_scrollFlags="snap" app:tabIndicator="@drawable/tab_layout_dot" app:tabMode="scrollable" app:tabRippleColor="@null" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnWidth="130.0dip" android:layout_below="@id/tabLayout" />
+    <ProgressBar android:id="@id/pb_progress" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_below="@id/tabLayout" android:layout_centerHorizontal="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <RelativeLayout android:id="@id/rl_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_info" android:layout_width="200.0dip" android:layout_height="160.0dip" android:layout_centerHorizontal="true" android:alpha="0.7" />
+        <com.google.android.material.textview.MaterialTextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Belum ada hentai/jav pada abjad ini" android:layout_below="@id/iv_info" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

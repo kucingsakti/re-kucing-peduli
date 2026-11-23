@@ -1,0 +1,914 @@
+--------- beginning of main
+E/cutils-trace(18381): Error opening trace file: No such file or directory (2)
+--------- beginning of system
+I/ActivityManager( 4753): Force stopping com.kcstream.cing appid=10223 user=0: from pid 18381
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/CarrierSvcBindHelper( 5196): onHandleForceStop: [com.kcstream.cing]
+D/CarrierSvcBindHelper( 5196): No carrier app for: 0
+D/CarrierSvcBindHelper( 5196): No carrier app for: 1
+D/AndroidRuntime(18384): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime(18384): Using default boot image
+I/AndroidRuntime(18384): Leaving lock profiling enabled
+E/cutils-trace(18384): Error opening trace file: No such file or directory (2)
+I/app_process(18384): Core platform API reporting enabled, enforcing=false
+I/app_process(18384): Using CollectorTypeCC GC.
+W/app_process(18384): FaultHandler: MEMBARRIER_CMD_REGISTER_PRIVATE_EXPEDITED failed: 38 Function not implemented
+D/nativeloader(18384): InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+D/nativeloader(18384): Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+D/app_process(18384): u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu") succeeded. 
+D/app_process(18384): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+D/nativeloader(18384): Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+D/nativeloader(18384): Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+D/nativeloader(18384): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+D/AndroidRuntime(18384): Calling main entry com.android.commands.monkey.Monkey
+D/nativeloader(18384): Load /system/lib64/libmonkey_jni.so using ns default for caller /system/framework/monkey.jar in same partition (is_bridged=0): ok
+W/Monkey  (18384): args: [-p, com.kcstream.cing, -c, android.intent.category.LAUNCHER, 1]
+W/libc    (18384): Access denied finding property "qemu.sf.lcd_density"
+W/libc    (18384): Access denied finding property "qemu.sf.lcd_density"
+W/commands.monkey(18384): type=1400 audit(0.0:897): avc:  denied  { read } for  name="u:object_r:qemu_sf_lcd_density_prop:s0" dev="tmpfs" ino=9675 scontext=u:r:shell:s0 tcontext=u:object_r:qemu_sf_lcd_density_prop:s0 tclass=file permissive=0
+W/commands.monkey(18384): type=1400 audit(0.0:898): avc:  denied  { read } for  name="u:object_r:qemu_sf_lcd_density_prop:s0" dev="tmpfs" ino=9675 scontext=u:r:shell:s0 tcontext=u:object_r:qemu_sf_lcd_density_prop:s0 tclass=file permissive=0
+I/VirtualInputDevice(18384): Falling back to version 4 manual setup
+W/Monkey  (18384):  arg: "-p"
+W/Monkey  (18384):  arg: "com.kcstream.cing"
+W/Monkey  (18384):  arg: "-c"
+W/Monkey  (18384):  arg: "android.intent.category.LAUNCHER"
+W/Monkey  (18384):  arg: "1"
+W/Monkey  (18384): data="com.kcstream.cing"
+W/Monkey  (18384): data="android.intent.category.LAUNCHER"
+D/EventHub( 4753): No input device configuration file found for device 'Monkey touch'.
+I/EventHub( 4753): usingClockIoctl=true
+I/EventHub( 4753): New device: id=18, fd=651, path='/dev/input/event14', name='Monkey touch', classes=TOUCH | TOUCH_MT, configuration='', keyLayout='', keyCharacterMap='', builtinKeyboard=false, 
+I/InputReader( 4753): Device reconfigured: id=9, name='Monkey touch', size 1080x2340, orientation Rotation0, mode DIRECT, display id 0
+I/InputReader( 4753): Device added: id=9, eventHubId=18, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f',sources=TOUCHSCREEN
+W/ActivityManager( 4753): registerReceiverWithFeature: no app for null
+E/WindowManager( 4753): Display reconfigured outside of a transition: Display{#0 state=ON size=1080x2340 ROTATION_0}
+W/ActivityTaskManager( 4753): callingPackage for (uid=2000, pid=18384) has no WPC
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+V/GrammaticalInflectionUtils( 4753): AttributionSource: android.content.AttributionSource@5bafd94f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+I/ndroid.systemui( 5053): AssetManager2(0x7d976c12f8) locale list changing from [] to [en-US]
+V/WindowManagerShell( 5053): Transition requested (#35): android.os.BinderProxy@7d00a8c TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=40 effectiveUid=10223 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity } baseActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} topActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} origActivity=null realActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} numActivities=1 lastActiveTime=2865786 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@b1355d5} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 85 - 0, 0) topActivityInfo=ActivityInfo{320a1ea com.kcstream.cing.activity.SplashActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(282, 672 - 799, 1752) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 35 }
+I/ActivityTaskManager( 4753): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity} with LAUNCH_MULTIPLE from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+I/Monkey  (18384): Events injected: 1
+W/HWUI    ( 5053): Image decoding logging dropped!
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+V/GrammaticalInflectionUtils( 4753): AttributionSource: android.content.AttributionSource@5bafd94f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+D/CoreBackPreview( 4753): Window{3ad1468 u0 Splash Screen com.kcstream.cing}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@227f567, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+D/BackgroundInstallControlService( 4753): Package event received: 0
+V/BinderSender( 5982): Uid 10223 starts
+D/Zygote  ( 4401): Forked child process 18398
+I/ActivityManager( 4753): Start proc 18398:com.kcstream.cing/u0a223 for next-top-activity {com.kcstream.cing/com.kcstream.cing.activity.SplashActivity}
+I/Monkey  (18384): ## Network stats: elapsed time=71ms (0ms mobile, 0ms wifi, 71ms not connected)
+I/app_process(18384): System.exit called, status: 0
+I/AndroidRuntime(18384): VM exiting with result code 0.
+W/main    (18398): type=1400 audit(0.0:899): avc:  denied  { search } for  name="adb" dev="mmcblk0p28" ino=358 scontext=u:r:zygote:s0 tcontext=u:object_r:adb_data_file:s0 tclass=dir permissive=0
+V/WindowManager( 4753): Sent Transition (#35) createdAt=11-23 21:45:28.821 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=40 effectiveUid=10223 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity } baseActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} topActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} origActivity=null realActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} numActivities=1 lastActiveTime=2865786 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{f826798 Task{e93ac7c #40 type=standard A=10223:com.kcstream.cing}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 85 - 0, 0) topActivityInfo=ActivityInfo{da69bf1 com.kcstream.cing.activity.SplashActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(282, 672 - 799, 1752) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 35 }
+V/WindowManager( 4753):     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+V/WindowManager( 4753):     info={id=35 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManager( 4753):         {WCT{RemoteToken{f826798 Task{e93ac7c #40 type=standard A=10223:com.kcstream.cing}}} m=OPEN f=NONE leash=Surface(name=Task=40)/@0xc26e10a sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1},
+V/WindowManager( 4753):         {WCT{RemoteToken{2e285cf Task{59c3e9 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x9256fd8 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1}
+V/WindowManager( 4753):     ]}
+V/WindowManagerShell( 5053): onTransitionReady(transaction=20413979559439)
+V/WindowManagerShell( 5053): onTransitionReady (#35) android.os.BinderProxy@7d00a8c: {id=35 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManagerShell( 5053):         {m=OPEN f=NONE leash=Surface(name=Task=40)/@0x3fc4043 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1},
+V/WindowManagerShell( 5053):         {m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x4cdf6c0 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1}
+V/WindowManagerShell( 5053):     ]}
+V/WindowManagerShell( 5053): Playing animation for (#35) android.os.BinderProxy@7d00a8c@0
+V/ShellRecents( 5053): RecentsTransitionHandler.startAnimation: no controller found
+V/WindowManagerShell( 5053): Transition doesn't have explicit remote, search filters for match for {id=35 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=40)/@0x3fc4043 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x4cdf6c0 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1}]}
+V/WindowManagerShell( 5053):  Delegate animation for (#35) to null
+V/WindowManagerShell( 5053): start default transition animation, info = {id=35 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=40)/@0x3fc4043 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x4cdf6c0 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1}]}
+V/WindowManagerShell( 5053): loadAnimation: anim=android.view.animation.AnimationSet@9989d9f animAttr=0x13 type=OPEN isEntrance=false
+V/WindowManagerShell( 5053): loadAnimation: anim=android.view.animation.AnimationSet@95bddd8 animAttr=0x12 type=OPEN isEntrance=true
+V/WindowManagerShell( 5053):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@9e27269
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+I/m.kcstream.cing(18398): Using CollectorTypeCC GC.
+E/m.kcstream.cing(18398): Not starting debugger since process cannot load the jdwp agent.
+W/m.kcstream.cing(18398): Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: activity
+D/VectorZygiskBridge( 4753): onTransact: action=GET_BINDER, callerUid=10223
+I/EventHub( 4753): Removing device Monkey touch due to epoll hang-up event.
+I/EventHub( 4753): Removed device: path=/dev/input/event14 name=Monkey touch id=18 fd=651 classes=TOUCH | TOUCH_MT
+D/nativeloader(18398): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+I/EventHub( 4753): Removing device '/dev/input/event14' due to inotify event
+I/InputReader( 4753): Device removed: id=9, eventHubId=18, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f', sources=TOUCHSCREEN
+D/BackgroundInstallControlService( 4753): Package event received: 0
+V/BinderSender( 5982): Uid 10223 already starts
+V/BinderSender( 5982): Uid 10223 already starts
+D/CompatChangeReporter(18398): Compat change id reported: 242716250; UID 10223; state: ENABLED
+E/WindowManager( 4753): Display reconfigured outside of a transition: Display{#0 state=ON size=1080x2340 ROTATION_0}
+D/NavigationModeController( 5053): getCurrentUserContext: contextUser=0 currentUser=0
+D/TouchInteractionService( 5357): disposeEventHandlers: Reason: Initializing input monitor due to: onTrackpadConnected() instance=243294982
+D/InputMonitorCompat( 5357): Input event receiver for monitor (swipe-up-disp0) disposed
+D/InputMonitorCompat( 5357): Input monitor (swipe-up-disp0) disposed
+D/InputMonitorCompat( 5357): Input monitor (swipe-up-disp0) created
+D/InputMonitorCompat( 5357): Input event receiver for monitor (swipe-up-disp0) created
+D/ApplicationLoaders(18398): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+D/ApplicationLoaders(18398): Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+D/nativeloader(18398): Configuring clns-7 for other apk /data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/lib/arm64:/data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.kcstream.cing
+I/m.kcstream.cing(18398): AssetManager2(0x7d976af378) locale list changing from [] to [en-US]
+V/GraphicsEnvironment(18398): Currently set values for:
+V/GraphicsEnvironment(18398):   angle_gl_driver_selection_pkgs=[]
+V/GraphicsEnvironment(18398):   angle_gl_driver_selection_values=[]
+V/GraphicsEnvironment(18398): com.kcstream.cing is not listed in per-application setting
+V/GraphicsEnvironment(18398): Neither updatable production driver nor prerelease driver is supported.
+D/nativeloader(18398): Load /data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk!/lib/arm64-v8a/libnative-lib.so using class loader ns clns-7 (caller=/data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk): ok
+V/WindowManagerShell( 5053): Transition animation finished (aborted=false), notifying core (#35) android.os.BinderProxy@7d00a8c@0
+V/WindowManager( 4753): Finish Transition (#35): created at 11-23 21:45:28.821 collect-started=0.145ms request-sent=21.604ms started=24.439ms ready=90.327ms sent=98.482ms finished=280.102ms
+D/VRI[MainActivity](10560): visibilityChanged oldVisibility=true newVisibility=false
+V/WindowManagerShell( 5053): Track 0 became idle
+V/WindowManagerShell( 5053): All active transition animations finished
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+E/BufferQueueProducer(10560): [VRI[MainActivity]#7(BLAST Consumer)7](id:294000000007,api:0,p:-1,c:10560) disconnect: not connected (req=1)
+W/libEGL  (10560): EGLNativeWindowType 0x7c67744ad0 disconnect failed
+I/FirebaseApp(18398): Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+I/FirebaseCrashlytics(18398): Initializing Firebase Crashlytics 19.0.3 for com.kcstream.cing
+I/DynamiteModule(18398): Considering local module com.google.android.gms.measurement.dynamite:117 and remote module com.google.android.gms.measurement.dynamite:220
+I/DynamiteModule(18398): Selected remote version of com.google.android.gms.measurement.dynamite, version >= 220
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/CompatChangeReporter( 4753): Compat change id reported: 161145287; UID 10223; state: ENABLED
+D/CompatChangeReporter( 4753): Compat change id reported: 261072174; UID 10223; state: ENABLED
+W/System  (18398): ClassLoader referenced unknown path: 
+D/nativeloader(18398): Configuring clns-8 for other apk . target_sdk_version=37, uses_libraries=, library_path=/data/app/~~zvBaZMoLm6dft27_EfE1Pg==/com.google.android.gms-0vG9zBmZsc47DNfp7vQZsA==/lib/arm64:/data/app/~~zvBaZMoLm6dft27_EfE1Pg==/com.google.android.gms-0vG9zBmZsc47DNfp7vQZsA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+I/m.kcstream.cing(18398): AssetManager2(0x7d976abb38) locale list changing from [] to [en-US]
+I/FirebaseInitProvider(18398): FirebaseApp initialization successful
+D/FileUtils( 4753): Rounded bytes from 2815758336 to 4000000000
+D/CompatChangeReporter(18398): Compat change id reported: 253665015; UID 10223; state: ENABLED
+D/CompatChangeReporter( 4753): Compat change id reported: 271850009; UID 10223; state: ENABLED
+D/CompatChangeReporter( 4753): Compat change id reported: 253665015; UID 10223; state: ENABLED
+I/m.kcstream.cing(18398): AssetManager2(0x7d976b47d8) locale list changing from [] to [en-US]
+D/nativeloader(18398): Load /data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk!/lib/arm64-v8a/libtmlib.so using class loader ns clns-7 (caller=/data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk): ok
+I/m.kcstream.cing(18398): AssetManager2(0x7d976b5a98) locale list changing from [] to [en-US]
+I/FirebaseCrashlytics(18398): Saved version control info
+I/PhenotypeResourceReader( 5542): unable to find any Phenotype resource metadata for com.kcstream.cing
+W/SharedPreferencesImpl(18398): Cannot read /data/user/0/com.kcstream.cing/shared_prefs/Lpt8WLRqdspyfb4HJG3nBpExQr2L0dk.xml
+W/SharedPreferencesImpl(18398): org.xmlpull.v1.XmlPullParserException: Unexpected end of document
+W/SharedPreferencesImpl(18398): 	at com.android.internal.util.XmlUtils.readValueXml(XmlUtils.java:1550)
+W/SharedPreferencesImpl(18398): 	at com.android.internal.util.XmlUtils.readMapXml(XmlUtils.java:971)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.loadFromDisk(SharedPreferencesImpl.java:179)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.lambda$startLoadFromDisk$0(SharedPreferencesImpl.java:149)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.$r8$lambda$gCIQI__z13DI5jNIqnAnYLWLcMc(Unknown Source:0)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+W/SharedPreferencesImpl(18398): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+W/SharedPreferencesImpl(18398): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+W/SharedPreferencesImpl(18398): 	at java.lang.Thread.run(Thread.java:1119)
+D/nativeloader(18398): Load /data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk!/lib/arm64-v8a/libsecurity.so using class loader ns clns-7 (caller=/data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk): ok
+E/m.kcstream.cing(18398): No package ID 74 found for resource ID 0x740b0013.
+I/FA      (18398): App measurement initialized, version: 196007
+I/FA      (18398): To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+I/FA      (18398): To enable faster debug mode event logging run:
+I/FA      (18398):   adb shell setprop debug.firebase.analytics.app com.kcstream.cing
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BoundBrokerSvc( 5542): onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+D/BoundBrokerSvc( 5542): Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+W/getenforce(18447): type=1400 audit(0.0:900): avc:  denied  { read } for  name="enforce" dev="selinuxfs" ino=4 scontext=u:r:untrusted_app:s0:c223,c256,c512,c768 tcontext=u:object_r:selinuxfs:s0 tclass=file permissive=0 app=com.kcstream.cing
+I/pixel-thermal( 4636): ac:40.9 raw data: ac:40900 
+W/m.kcstream.cing(18398): type=1400 audit(0.0:901): avc:  denied  { read } for  name="enforce" dev="selinuxfs" ino=4 scontext=u:r:untrusted_app:s0:c223,c256,c512,c768 tcontext=u:object_r:selinuxfs:s0 tclass=file permissive=0
+D/nativeloader(18398): Load /data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk!/lib/arm64-v8a/libclib.so using class loader ns clns-7 (caller=/data/app/~~uoRWPMkNUaQAzMLR_OyUtg==/com.kcstream.cing-Qq12McAAIXbaIcTblsokmw==/base.apk): ok
+D/PowerUI ( 5053): can't show warning due to - plugged: true status unknown: false
+D/FileUtils( 4753): Rounded bytes from 2815758336 to 4000000000
+W/GservicesPersistence( 5542): Package com.kcstream.cing is not approved to access the device ID
+I/DrmHalHidl(18398): found instance=widevine version=android.hardware.drm@1.3::IDrmFactory
+W/ModemPowerProfile(18398): getAverageBatteryDrainMaH called with unexpected key: 0x0, drain:SLEEP,RAT:DEFAULT
+W/ModemPowerProfile(18398): getAverageBatteryDrainMaH called with unexpected key: 0x10000000, drain:IDLE,RAT:DEFAULT
+W/ModemPowerProfile(18398): getAverageBatteryDrainMaH called with unexpected key: 0x20000000, drain:RX,RAT:DEFAULT
+I/DrmUtils(18398): found IDrmFactory. Instance name:[android.hardware.drm.IDrmFactory/clearkey]
+W/ModemPowerProfile(18398): getAverageBatteryDrainMaH called with unexpected key: 0x30000000, drain:TX,level:0,RAT:DEFAULT
+W/ModemPowerProfile(18398): getAverageBatteryDrainMaH called with unexpected key: 0x31000000, drain:TX,level:1,RAT:DEFAULT
+W/ModemPowerProfile(18398): getAverageBatteryDrainMaH called with unexpected key: 0x32000000, drain:TX,level:2,RAT:DEFAULT
+W/ModemPowerProfile(18398): getAverageBatteryDrainMaH called with unexpected key: 0x33000000, drain:TX,level:3,RAT:DEFAULT
+W/ModemPowerProfile(18398): getAverageBatteryDrainMaH called with unexpected key: 0x34000000, drain:TX,level:4,RAT:DEFAULT
+E/DrmHalHidl(18398): uuid=[edef8ba979d64ace a3c827dcd51d21ed] No supported hal instance found
+I/WVCdm   ( 4422): [app][com.kcstream.cing] calling virtual Return<void> wvdrm::hardware::drm::V1_3::widevine::WVDrmFactory::createPlugin(const hidl_array<uint8_t, 16> &, const android::hardware::hidl_string &, android::hardware::drm::V1_3::IDrmFactory::createPlugin_cb)
+D/WVCdm   ( 4422): Instantiating CDM.
+I/WVCdm   ( 4422): [cdm_engine.cpp(517):QueryStatus] Querying status
+I/WVCdm   ( 4422): [oemcrypto_adapter_dynamic.cpp(696):Initialize] Level 3 Build Info (v16): OEMCrypto Level3 Code 22589 May 28 2021 19:37:19
+I/WVCdm   ( 4422): [(0):] Level3 Library 22589 May 28 2021 19:37:19
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/WVCdm   ( 4422): [oemcrypto_adapter_dynamic.cpp(710):Initialize] L3 Initialized. Trying L1.
+E/wv_dash ( 4422): No saved usage table. Creating new table.
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+W/System.err(18398): SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+W/System.err(18398): SLF4J: Defaulting to no-operation (NOP) logger implementation
+W/System.err(18398): SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/AttributionAndPermissionUtils( 4561): checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10223, pid 18398, packageName "<unknown>"]
+I/SECURITY(18398): openAt
+I/TeeSysClient( 4422): driver version: v6.3 [hardware/samsung_slsi/exynos7885/mobicore/ClientLib/src/driver.cpp:104]
+I/TeeSysClient( 4422): driver open [hardware/samsung_slsi/exynos7885/mobicore/ClientLib/src/driver.cpp:109]
+E/wv_dash ( 4422): Fail to open widevine keybox
+E/wv_dash ( 4422): Trustlet did not send a valid return code: 0x10
+E/wv_dash ( 4422): process drm check keybox valid failed
+I/WVCdm   ( 4422): [oemcrypto_adapter_dynamic.cpp(957):LoadLevel1] Installed root key from /factory/wv.keys
+D/WVCdm   ( 4422): [oemcrypto_adapter_dynamic.cpp(729):Initialize] OEMCrypto_Initialize Level 1 success. I will use level 1.
+I/WVCdm   ( 4422): [oemcrypto_adapter_dynamic.cpp(732):Initialize] Level 1 Build Info (v15):  LSI OEMCrypto v15.2 Aug 25 2021 17:41:52
+D/WVCdm   ( 4422): [crypto_session.cpp(317):Init] OEMCrypto version (default security level): 15.0
+D/WVCdm   ( 4422): [crypto_session.cpp(326):Init] OEMCrypto version (L3 security level): 16.3
+I/WVCdm   ( 4422): [cdm_engine.cpp(517):QueryStatus] Querying status
+D/WVCdm   ( 4422): [crypto_session.cpp(718):Open] Opening crypto session: requested_security_level = Default
+E/wv_dash ( 4422): Add session list sid(1) index(0)
+I/WVCdm   ( 4422): [usage_table_header.cpp(159):Init] Initializing usage table header: security_level = 1
+D/WVCdm   ( 4422): [usage_table_header.cpp(197):Init] Usage table capacity: 200, security_level = 1
+I/WVCdm   ( 4422): [usage_table_header.cpp(212):Init] Number of usage entries: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+E/wv_dash ( 4422): OEMCrypto_GetDeviceID(): short buffer
+E/WVCdm   ( 4422): [wv_content_decryption_module.cpp(389):GetMetrics] Cdm Identifier not found
+E/WVCdm   ( 4422): [wv_content_decryption_module.cpp(449):CloseCdm] Cdm Identifier not found
+E/WVCdm   ( 4422): Failed to close cdm. status 12
+I/WVCdm   ( 4422): [(0):] L3 Terminate.
+I/TeeSysClient( 4422): driver closed [hardware/samsung_slsi/exynos7885/mobicore/ClientLib/src/driver.cpp:120]
+W/SharedPreferencesImpl(18398): Cannot read /data/user/0/com.kcstream.cing/shared_prefs/rPt2dDpYfHIz0VfNfmAJNyAXcpeEqLFOdlEfRm5W0GVg.xml
+W/SharedPreferencesImpl(18398): org.xmlpull.v1.XmlPullParserException: Unexpected end of document
+W/SharedPreferencesImpl(18398): 	at com.android.internal.util.XmlUtils.readValueXml(XmlUtils.java:1550)
+W/SharedPreferencesImpl(18398): 	at com.android.internal.util.XmlUtils.readMapXml(XmlUtils.java:971)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.loadFromDisk(SharedPreferencesImpl.java:179)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.lambda$startLoadFromDisk$0(SharedPreferencesImpl.java:149)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.$r8$lambda$gCIQI__z13DI5jNIqnAnYLWLcMc(Unknown Source:0)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+W/SharedPreferencesImpl(18398): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+W/SharedPreferencesImpl(18398): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+W/SharedPreferencesImpl(18398): 	at java.lang.Thread.run(Thread.java:1119)
+I/BroadcastQueue( 4753): BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:1 completeLatency:547 dispatchRealLatency:1 completeRealLatency:548 receiversSize:1 userId:0 userType:android.os.usertype.full.SYSTEM
+W/SQLiteLog(18398): (28) double-quoted string literal: "os__session_duration"
+D/CompatChangeReporter(18398): Compat change id reported: 263076149; UID 10223; state: ENABLED
+W/SQLiteLog(18398): (28) double-quoted string literal: "notification"
+I/m.kcstream.cing(18398): AssetManager2(0x7d976b5db8) locale list changing from [] to [en-US]
+W/SharedPreferencesImpl(18398): Cannot read /data/user/0/com.kcstream.cing/shared_prefs/wlT4WLRqdspyfb4HJG3nBpExQr2L0dk.xml
+W/SharedPreferencesImpl(18398): org.xmlpull.v1.XmlPullParserException: Unexpected end of document
+W/SharedPreferencesImpl(18398): 	at com.android.internal.util.XmlUtils.readValueXml(XmlUtils.java:1550)
+W/SharedPreferencesImpl(18398): 	at com.android.internal.util.XmlUtils.readMapXml(XmlUtils.java:971)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.loadFromDisk(SharedPreferencesImpl.java:179)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.lambda$startLoadFromDisk$0(SharedPreferencesImpl.java:149)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.$r8$lambda$gCIQI__z13DI5jNIqnAnYLWLcMc(Unknown Source:0)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+W/SharedPreferencesImpl(18398): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+W/SharedPreferencesImpl(18398): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+W/SharedPreferencesImpl(18398): 	at java.lang.Thread.run(Thread.java:1119)
+W/SharedPreferencesImpl(18398): Cannot read /data/user/0/com.kcstream.cing/shared_prefs/FVt1uiDo8WkyrKqT9F55Dye8Sc9tuAYjvxH7tnr0.xml
+W/SharedPreferencesImpl(18398): org.xmlpull.v1.XmlPullParserException: Unexpected end of document
+W/SharedPreferencesImpl(18398): 	at com.android.internal.util.XmlUtils.readValueXml(XmlUtils.java:1550)
+W/SharedPreferencesImpl(18398): 	at com.android.internal.util.XmlUtils.readMapXml(XmlUtils.java:971)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.loadFromDisk(SharedPreferencesImpl.java:179)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.lambda$startLoadFromDisk$0(SharedPreferencesImpl.java:149)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl.$r8$lambda$gCIQI__z13DI5jNIqnAnYLWLcMc(Unknown Source:0)
+W/SharedPreferencesImpl(18398): 	at android.app.SharedPreferencesImpl$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+W/SharedPreferencesImpl(18398): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+W/SharedPreferencesImpl(18398): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+W/SharedPreferencesImpl(18398): 	at java.lang.Thread.run(Thread.java:1119)
+I/m.kcstream.cing(18398): AssetManager2(0x7d976b63f8) locale list changing from [] to [en-US]
+D/DesktopModeFlagsUtil(18398): Toggle override initialized to: OVERRIDE_UNSET
+W/HWUI    (18398): Image decoding logging dropped!
+D/UnityAds(18398): com.unity3d.services.ads.UnityAdsImplementation.initialize() (line:1) :: ENTERED METHOD
+D/UnityAds(18398): com.unity3d.services.UnityServices.initialize() (line:1) :: ENTERED METHOD
+I/UnityAds(18398): com.unity3d.services.UnityServices.initialize() (line:376) :: Initializing Unity Services 4.9.1 (4910) with game id 4942017 in production mode, session 809666eb-f1bc-4ded-bbc1-f2869f5cf69d
+I/UnityAds(18398): com.unity3d.services.UnityServices.initialize() (line:420) :: Unity Services environment check OK
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+I/FA      (18398): Tag Manager is not found and thus will not be used
+W/Parcel  (18398): Expecting binder but got null!  
+W/HWUI    (18398): Unknown dataspace 0
+D/InsetsController(18398): Setting requestedVisibleTypes to -10 (was -9)
+W/WindowManager( 4753): Failed looking up window session=Session{339ff07 18398:u0a10223} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6331 com.android.server.wm.Session.updateRequestedVisibleTypes:699 android.view.IWindowSession$Stub.onTransact:1023 
+D/CoreBackPreview( 4753): Window{a378b59 u0 com.kcstream.cing/com.kcstream.cing.activity.SplashActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@dfce51b, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+I/UnityAds(18398): com.unity3d.services.core.domain.task.InitializeStateConfig$doWork$2.invokeSuspend() (line:55) :: Unity Ads init: load configuration from https://configv2.unityads.unity3d.com/webview/4.9.1/release/config.json
+I/okhttp.OkHttpClient(18398): --> GET https://api.explorethefrontierforlimitlessimaginationanddiscov.com/71b8acf33b508c7543592acd9d9eb70d/updateApp
+I/okhttp.OkHttpClient(18398): Token: XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY
+I/okhttp.OkHttpClient(18398): Accept: application/json
+I/okhttp.OkHttpClient(18398): AppBuildCode: 25301
+I/okhttp.OkHttpClient(18398): AppSignature: pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH
+I/okhttp.OkHttpClient(18398): --> END GET
+D/BiometricService( 4753): canAuthenticate: User=0, Caller=0, Authenticators=255
+I/hwservicemanager( 3633): getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+E/HWUI    (18398): Device claims wide gamut support, cannot find matching config, error = EGL_SUCCESS
+D/BiometricService/PreAuthInfo( 4753): Package: com.kcstream.cing Sensor ID: 0 Modality: 2 Status: 1
+D/BiometricService/PreAuthInfo( 4753): getCanAuthenticateInternal Modality: 2 AuthenticatorStatus: 1
+D/AuthService( 4753): canAuthenticate, userId: 0, callingUserId: 0, authenticators: 255, result: 0
+I/hwc-display( 4438): EXYNOS_GET_DISPLAY_CURRENT_MODE failed errno : 25, ret: -1
+I/hwservicemanager( 3633): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+I/Gralloc4(18398): mapper 4.x is not supported
+I/hwservicemanager( 3633): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+W/Gralloc3(18398): mapper 3.x is not supported
+E/WifiStaIfaceAidlImpl( 4753): getCachedScanData failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+I/gralloc (18398): Arm Module v1.0
+I/FirebaseApp(18398): Device unlocked: initializing all Firebase APIs for app ONESIGNAL_SDK_FCM_APP_NAME
+D/BackgroundInstallControlService( 4753): Package event received: 0
+I/OneSignal(18398): [Thread-20] Device registered, push token = c5ijWjQjSXCwoIHWtVwDYL:APA91bGwDLQ57aWRuHD_kfb0SyN-GFxGJsGWbXmUxQqfZIMAc9TsETDI-9kfeJCd0ThozDjgXoLkiBTVJBGZtE3KAsYX2vV7MXLK-p5Xy6kSgVB8hEKZzqE
+I/ActivityTaskManager( 4753): Displayed com.kcstream.cing/.activity.SplashActivity for user 0: +1s191ms
+I/ImeTracker( 4753): com.kcstream.cing:d2f8fe18: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+D/InsetsController(18398): hide(ime(), fromIme=false)
+I/ImeTracker(18398): com.kcstream.cing:d2f8fe18: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+I/ImeTracker(10560): org.fossify.home:d3a6e54e: onRequestHide at ORIGIN_CLIENT reason HIDE_WINDOW_LOST_FOCUS fromUser false
+D/InsetsController(10560): hide(ime(), fromIme=false)
+I/ImeTracker(10560): org.fossify.home:d3a6e54e: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+D/AdvertisingIdClient( 5542): AdvertisingIdClient already created.
+D/BackgroundInstallControlService( 4753): Package event received: 0
+I/AdvertisingIdClient( 5542): shouldSendLog 2234231
+I/AdvertisingIdClient( 5542): GetInfoInternal elapse 16ms
+D/BoundBrokerSvc( 5542): onRebind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+E/UnityAds(18398): com.unity3d.services.core.request.WebRequest.makeStreamRequest() (line:87) :: Error while writing POST params: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+W/InteractionJankMonitor(18398): Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.kcstream.cing
+E/BufferQueueProducer( 5053): [VRI[cing]#56(BLAST Consumer)56](id:13bd00000038,api:0,p:-1,c:5053) disconnect: not connected (req=1)
+W/libEGL  ( 5053): EGLNativeWindowType 0x7c67717f80 disconnect failed
+W/WindowOnBackDispatcher( 5053): sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@b21aaaf
+D/CoreBackPreview( 4753): Window{3ad1468 u0 Splash Screen com.kcstream.cing EXITING}: Setting back callback null
+I/FontLog ( 5542): (REDACTED) Received query %s, URI %s
+I/FontLog ( 5542): (REDACTED) Query [%s] resolved to %s
+I/FontLog ( 5542): (REDACTED) Fetch %s end status %s
+I/FontLog ( 5542): (REDACTED) Pulling font file for id = %d, cache size = %d
+I/FontLog ( 5542): (REDACTED) Pulling font file for id = %d, cache size = %d
+D/CompatChangeReporter( 4753): Compat change id reported: 262645982; UID 10223; state: ENABLED
+D/PackageUpdatedTask( 5357): Package updated: mOp=UPDATE packages=[com.kcstream.cing], user=UserHandle{0}
+D/ShortcutService( 4753): received package broadcast intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 (has extras) }
+D/ShortcutService( 4753): changing package: com.kcstream.cing userId=0
+D/CarrierSvcBindHelper( 5196): onPackageModified: com.kcstream.cing
+D/CarrierSvcBindHelper( 5196): No carrier app for: 0
+D/CarrierSvcBindHelper( 5196): No carrier app for: 1
+W/ActivityManager( 4753): Removing FLAG_RECEIVER_FROM_SHELL because caller is UID 1000
+V/BinderSender( 5982): Uid 10186 already starts
+D/BackgroundInstallControlService( 4753): Package event received: 0
+W/MagnificationConnectionManager( 4753): requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+D/BackgroundInstallControlService( 4753): Package event received: 0
+W/ActivityManager( 4753): Removing FLAG_RECEIVER_FROM_SHELL because caller is UID 1000
+W/HWUI    ( 5357): Image decoding logging dropped!
+E/SmsApplication( 5196): com.android.messaging lost android:receive_wap_push:  (fixing)
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 10158, code = RECEIVE_WAP_PUSH, mode = allow, callingUid = 1001, oldMode = allow
+I/RoleService( 4753): Granting default roles...
+E/SmsApplication( 5196): com.android.messaging lost android:read_cell_broadcasts:  (fixing)
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 10158, code = READ_CELL_BROADCASTS, mode = allow, callingUid = 1001, oldMode = allow
+I/PermissionControllerServiceImpl( 5324): Updating user sensitive for uid 10223
+W/Role    ( 4753): Cannot get ApplicationInfo for default holder: com.google.android.gms.supervision
+W/Role    ( 4753): Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = READ_SMS, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = RECEIVE_SMS, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = RECEIVE_WAP_PUSH, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = SEND_SMS, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = READ_CELL_BROADCASTS, mode = allow, callingUid = 1001, oldMode = allow
+D/ImsResolver( 5196): maybeAddedImsService, packageName: com.kcstream.cing
+V/ImsResolver( 5196): searchForImsServices: package=com.kcstream.cing, users=[UserHandle{0}]
+V/ImsResolver( 5196): searchForImsServices: package=com.kcstream.cing, users=[UserHandle{0}]
+W/HWUI    ( 5357): Image decoding logging dropped!
+D/AlphabeticIndexCompat( 5357): computeSectionName: cs: Kucing sectionName: K
+E/chromium( 5542): [1123/214530.683355:ERROR:net/socket/ssl_client_socket_impl.cc:946] handshake failed; returned -1, SSL error code 1, net_error -202
+W/FA-SVC  ( 5542): Gms url request failed, app: app.mihon, GOOGLE_ANALYTICS, m1.hu: Exception in CronetUrlRequest: net::ERR_CERT_AUTHORITY_INVALID, ErrorCode=11, InternalErrorCode=-202, Retryable=false
+W/FA-SVC  ( 5542): Network upload failed. Will retry later. code, error: 0, m1.hu: Exception in CronetUrlRequest: net::ERR_CERT_AUTHORITY_INVALID, ErrorCode=11, InternalErrorCode=-202, Retryable=false
+E/SmsApplication( 5196): com.android.messaging lost android:receive_wap_push:  (fixing)
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 10158, code = RECEIVE_WAP_PUSH, mode = allow, callingUid = 1001, oldMode = allow
+E/SmsApplication( 5196): com.android.messaging lost android:read_cell_broadcasts:  (fixing)
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 10158, code = READ_CELL_BROADCASTS, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = READ_SMS, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = RECEIVE_SMS, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = RECEIVE_WAP_PUSH, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = SEND_SMS, mode = allow, callingUid = 1001, oldMode = allow
+W/AppOpService( 4753): Ignored setUidMode call for runtime permission app op: uid = 1001, code = READ_CELL_BROADCASTS, mode = allow, callingUid = 1001, oldMode = allow
+I/okhttp.OkHttpClient(18398): <-- 200 https://api.explorethefrontierforlimitlessimaginationanddiscov.com/71b8acf33b508c7543592acd9d9eb70d/updateApp (836ms)
+I/okhttp.OkHttpClient(18398): date: Mon, 23 Nov 2026 14:45:31 GMT
+I/okhttp.OkHttpClient(18398): content-type: application/json; charset=utf-8
+I/okhttp.OkHttpClient(18398): nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+I/okhttp.OkHttpClient(18398): vary: Accept-Encoding
+I/okhttp.OkHttpClient(18398): set-cookie: sl-session=LN8QIwujBWtv0QRtTs0M6Q==; Path=/; Max-Age=86400; HttpOnly
+I/okhttp.OkHttpClient(18398): cf-cache-status: DYNAMIC
+I/okhttp.OkHttpClient(18398): report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0JHcsTcwqyn%2B2vDxyy%2FiatOEvKGk5c2h3HvvKvkMC3l5t2Oj6%2BQ6JUnhna5X6BvDYNv9PzbURZrgpjwoVFMsElUYopjodNI%2Bjham2Cnjdpn2jPc%2Bpa0t4UHQYobY9tQtsWvpJrNzQGOamRIACKDh9l%2BEJc9%2BhySZGpIiPWgO0MKtkOo4R0HxoY%2BNm1jg"}]}
+I/okhttp.OkHttpClient(18398): server: cloudflare
+I/okhttp.OkHttpClient(18398): cf-ray: a5f0f5468a6a40a0-SIN
+I/okhttp.OkHttpClient(18398): alt-svc: h3=":443"; ma=86400
+I/okhttp.OkHttpClient(18398): {"latestVersion":"2.5.3-build01","latestVersionCode":"25301","bda":"true","oneLi":"FamKHTm94HBiriZeKxfU27PCUVgkUC","updateUrl":"https://dfiledd.explorethefrontierforlimitlessimaginationanddiscov.com/1b277fbcb697da33172a9582e90a1c96/apkUpdateBuild25301.apk","adFilterUrl":"https://linkpoi.me/app/adfilter","adMainUrl1":"https://linkpoi.me/spots-res","adMainUrl2":"https://linkpoi.me/appad","releaseNotes":["- Perbaikan link chat","- Perbaikan pada streaming","- Beberapa perbaikan minor","- Dukungan pada Android 15","","Buka http://linkpoi.me/neko jika gagal download"]}
+I/okhttp.OkHttpClient(18398): <-- END HTTP (570-byte body)
+E/RoleControllerServiceImpl( 4753): Default/fallback role holder package doesn't qualify for the role, package: com.google.android.googlequicksearchbox, role: android.app.role.ASSISTANT
+E/RoleControllerServiceImpl( 4753): Default/fallback role holder package doesn't qualify for the role, package: com.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+I/system_server( 4753): Background young concurrent copying GC freed 7663KB AllocSpace bytes, 22(472KB) LOS objects, 17% free, 32MB/39MB, paused 668us,259us total 169.314ms
+W/System  ( 4753): A resource failed to call release. 
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+I/ActivityTaskManager( 4753): START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.android.permissioncontroller cmp=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10223 (sr=162301807) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+V/WindowManagerShell( 5053): Transition requested (#36): android.os.BinderProxy@d591e6f TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=40 effectiveUid=10223 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity } baseActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} topActivity=ComponentInfo{com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} numActivities=2 lastActiveTime=2867735 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@f11f77c} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 85 - 0, 0) topActivityInfo=ActivityInfo{9f65805 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=true isActivityStackTransparent=false lastNonFullscreenBounds=Rect(282, 672 - 799, 1752) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 36 }
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+I/ssioncontroller( 5324): AssetManager2(0x7d976b63f8) locale list changing from [] to [en-US]
+D/CoreBackPreview( 4753): Window{5ee4f7c u0 com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@98ee768, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+E/HWUI    ( 5324): Device claims wide gamut support, cannot find matching config, error = EGL_SUCCESS
+D/BiometricService( 4753): canAuthenticate: User=0, Caller=0, Authenticators=255
+V/WindowManagerShell( 5053): onTransitionReady(transaction=20413979559492)
+V/WindowManagerShell( 5053): onTransitionReady (#36) android.os.BinderProxy@d591e6f: {id=36 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManagerShell( 5053):         {m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{202403703 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity)/@0xddc61c8 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=-1->0 r=-1->0:-1 bc=ff241f17 component=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity opt={t=FROM_STYLE mUserId=0}}
+V/WindowManagerShell( 5053):     ]}
+V/WindowManagerShell( 5053): Playing animation for (#36) android.os.BinderProxy@d591e6f@0
+V/ShellRecents( 5053): RecentsTransitionHandler.startAnimation: no controller found
+V/WindowManagerShell( 5053): Transition doesn't have explicit remote, search filters for match for {id=36 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{202403703 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity)/@0xddc61c8 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=-1->0 r=-1->0:-1 bc=ff241f17 component=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity opt={t=FROM_STYLE mUserId=0}}]}
+V/WindowManagerShell( 5053):  Delegate animation for (#36) to null
+V/WindowManagerShell( 5053): start default transition animation, info = {id=36 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{202403703 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity)/@0xddc61c8 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=-1->0 r=-1->0:-1 bc=ff241f17 component=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity opt={t=FROM_STYLE mUserId=0}}]}
+V/WindowManagerShell( 5053): loadAnimation: anim=null animAttr=0x4 type=OPEN isEntrance=true
+D/BiometricService/PreAuthInfo( 4753): Package: com.kcstream.cing Sensor ID: 0 Modality: 2 Status: 1
+D/BiometricService/PreAuthInfo( 4753): getCanAuthenticateInternal Modality: 2 AuthenticatorStatus: 1
+D/AuthService( 4753): canAuthenticate, userId: 0, callingUserId: 0, authenticators: 255, result: 0
+V/WindowManagerShell( 5053): Transition animation finished (aborted=false), notifying core (#36) android.os.BinderProxy@d591e6f@0
+I/ActivityTaskManager( 4753): Displayed com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity for user 0: +195ms
+V/WindowManager( 4753): Sent Transition (#36) createdAt=11-23 21:45:30.775 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=40 effectiveUid=10223 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity } baseActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} topActivity=ComponentInfo{com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} origActivity=null realActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} numActivities=2 lastActiveTime=2867735 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{f826798 Task{e93ac7c #40 type=standard A=10223:com.kcstream.cing}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 85 - 0, 0) topActivityInfo=ActivityInfo{ebb85b9 com.android.permissioncontroller.permission.ui.GrantPermissionsActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=true isActivityStackTransparent=false lastNonFullscreenBounds=Rect(282, 672 - 799, 1752) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 36 }
+V/WindowManager( 4753):     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+V/WindowManager( 4753):     info={id=36 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManager( 4753):         {m=OPEN f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{202403703 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity)/@0xa1f1214 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=-1->0 r=-1->0:-1 bc=ff241f17 component=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity opt={t=FROM_STYLE mUserId=0}}
+V/WindowManager( 4753):     ]}
+V/WindowManager( 4753): Finish Transition (#36): created at 11-23 21:45:30.775 collect-started=0.201ms request-sent=17.686ms started=23.135ms ready=33.323ms sent=192.16ms finished=206.878ms
+V/WindowManagerShell( 5053): Track 0 became idle
+V/WindowManagerShell( 5053): All active transition animations finished
+V/WindowManagerShell( 5053):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@9e27269
+V/WindowManagerShell( 5053): Track 0 became idle
+V/WindowManagerShell( 5053): All active transition animations finished
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+D/ConnectivityService( 4753): requestNetwork for uid/pid:10169/5053 asUid: 10186 activeRequest: null callbackRequest: 202 [NetworkRequest [ REQUEST id=203, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10186 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+D/WifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=203, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10186 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=203, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10186 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=203, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10186 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=203, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10186 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/ConnectivityService( 4753): NetReassign [203 : null → 100] [c 2] [a 4] [i 4]
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+D/ControlsListingControllerImpl( 5053): ServiceConfig reloaded, count: 0
+I/MediaProvider(10504): Invalidating LocalCallingIdentity cache for package com.kcstream.cing. Reason: package android.intent.action.PACKAGE_CHANGED
+I/GrantPermissionsViewModel( 5324): Permission grant result requestId=-5076636265963334721 callingUid=10223 callingPackage=com.kcstream.cing permission=android.permission.WRITE_EXTERNAL_STORAGE isImplicit=false result=1 isPermissionRationaleShown=falseisPackageRestrictedByEnhancedConfirmation=true
+I/GrantPermissionsViewModel( 5324): Permission grant result requestId=-5076636265963334721 callingUid=10223 callingPackage=com.kcstream.cing permission=android.permission.READ_EXTERNAL_STORAGE isImplicit=false result=1 isPermissionRationaleShown=falseisPackageRestrictedByEnhancedConfirmation=true
+V/WindowManagerShell( 5053): Transition requested (#37): android.os.BinderProxy@6a28186 TransitionRequestInfo { type = CLOSE, triggerTask = null, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 37 }
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+V/WindowManager( 4753): Sent Transition (#37) createdAt=11-23 21:45:31.113 via request=TransitionRequestInfo { type = CLOSE, triggerTask = null, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 37 }
+V/WindowManager( 4753):     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+V/WindowManager( 4753):     info={id=37 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManager( 4753):         {m=CLOSE f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{202403703 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity)/@0xa1f1214 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 bc=ff241f17 component=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity opt={t=FROM_STYLE mUserId=0}}
+V/WindowManager( 4753):     ]}
+V/WindowManagerShell( 5053): onTransitionReady(transaction=20413979559505)
+V/WindowManagerShell( 5053): onTransitionReady (#37) android.os.BinderProxy@6a28186: {id=37 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManagerShell( 5053):         {m=CLOSE f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{202403703 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity)/@0xa4c2a47 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 bc=ff241f17 component=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity opt={t=FROM_STYLE mUserId=0}}
+V/WindowManagerShell( 5053):     ]}
+V/WindowManagerShell( 5053): Playing animation for (#37) android.os.BinderProxy@6a28186@0
+V/ShellRecents( 5053): RecentsTransitionHandler.startAnimation: no controller found
+V/WindowManagerShell( 5053): Transition doesn't have explicit remote, search filters for match for {id=37 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=CLOSE f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{202403703 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity)/@0xa4c2a47 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 bc=ff241f17 component=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity opt={t=FROM_STYLE mUserId=0}}]}
+V/WindowManagerShell( 5053):  Delegate animation for (#37) to null
+V/WindowManagerShell( 5053): start default transition animation, info = {id=37 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=CLOSE f=TRANSLUCENT|FILLS_TASK leash=Surface(name=ActivityRecord{202403703 u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity)/@0xa4c2a47 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 bc=ff241f17 component=com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity opt={t=FROM_STYLE mUserId=0}}]}
+V/WindowManagerShell( 5053): loadAnimation: anim=null animAttr=0x7 type=CLOSE isEntrance=false
+V/WindowManagerShell( 5053): Transition animation finished (aborted=false), notifying core (#37) android.os.BinderProxy@6a28186@0
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+V/WindowManager( 4753): Finish Transition (#37): created at 11-23 21:45:31.113 collect-started=0.318ms request-sent=0.542ms started=11.81ms ready=26.512ms sent=34.839ms finished=43.078ms
+D/VRI[GrantPermissionsActivity]( 5324): visibilityChanged oldVisibility=true newVisibility=false
+V/WindowManagerShell( 5053): Track 0 became idle
+V/WindowManagerShell( 5053): All active transition animations finished
+V/WindowManagerShell( 5053):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@9e27269
+V/WindowManagerShell( 5053): Track 0 became idle
+V/WindowManagerShell( 5053): All active transition animations finished
+D/ConnectivityService( 4753): requestNetwork for uid/pid:10169/5053 asUid: 10223 activeRequest: null callbackRequest: 204 [NetworkRequest [ REQUEST id=205, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+D/WifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=205, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=205, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=205, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=205, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/ConnectivityService( 4753): NetReassign [205 : null → 100] [c 1] [a 3] [i 4]
+E/BufferQueueProducer( 5324): [VRI[GrantPermissionsActivity]#3(BLAST Consumer)3](id:14cc00000003,api:0,p:-1,c:5324) disconnect: not connected (req=1)
+W/libEGL  ( 5324): EGLNativeWindowType 0x7c676f5e80 disconnect failed
+I/ImeTracker( 4753): com.kcstream.cing:77b2f458: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+D/InsetsController(18398): hide(ime(), fromIme=false)
+I/ImeTracker(18398): com.kcstream.cing:77b2f458: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+I/ImeTracker( 5324): com.android.permissioncontroller:fac387a1: onRequestHide at ORIGIN_CLIENT reason HIDE_WINDOW_LOST_FOCUS fromUser false
+D/InsetsController( 5324): hide(ime(), fromIme=false)
+I/ImeTracker( 5324): com.android.permissioncontroller:fac387a1: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+W/WindowOnBackDispatcher( 5324): sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@38206ec
+D/CoreBackPreview( 4753): Window{5ee4f7c u0 com.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity}: Setting back callback null
+D/ViewRootImpl( 5324): Skipping stats log for color mode
+D/BackgroundInstallControlService( 4753): Package event received: 0
+W/System  (18398): A resource failed to call HardwareBuffer.close.  
+I/pixel-thermal( 4636): ac:40.9 raw data: ac:40900 
+I/ndroid.systemui( 5053): AssetManager2(0x7d976bea58) locale list changing from [] to [en-US]
+W/libc    (18564): Access denied finding property "ro.secure"
+W/getprop (18564): type=1400 audit(0.0:903): avc:  denied  { read } for  name="u:object_r:userdebug_or_eng_prop:s0" dev="tmpfs" ino=9747 scontext=u:r:untrusted_app:s0:c223,c256,c512,c768 tcontext=u:object_r:userdebug_or_eng_prop:s0 tclass=file permissive=0 app=com.kcstream.cing
+W/ps      (18565): type=1400 audit(0.0:904): avc:  denied  { read } for  name="pid_max" dev="proc" ino=269701 scontext=u:r:untrusted_app:s0:c223,c256,c512,c768 tcontext=u:object_r:proc_pid_max:s0 tclass=file permissive=0 app=com.kcstream.cing
+W/ps      (18567): type=1400 audit(0.0:905): avc:  denied  { read } for  name="pid_max" dev="proc" ino=269701 scontext=u:r:untrusted_app:s0:c223,c256,c512,c768 tcontext=u:object_r:proc_pid_max:s0 tclass=file permissive=0 app=com.kcstream.cing
+W/ps      (18568): type=1400 audit(0.0:906): avc:  denied  { read } for  name="pid_max" dev="proc" ino=269701 scontext=u:r:untrusted_app:s0:c223,c256,c512,c768 tcontext=u:object_r:proc_pid_max:s0 tclass=file permissive=0 app=com.kcstream.cing
+W/system_server( 4753): Large reply transaction of 333168 bytes, interface descriptor android.content.pm.IPackageManager, code 3
+E/AccessPersistence( 4753): Failed to verity-protect runtime-permissions
+E/AccessPersistence( 4753): java.io.IOException: Failed to enable fs-verity on FD(549): Inappropriate ioctl for device
+E/AccessPersistence( 4753): 	at com.android.internal.security.VerityUtils.setUpFsverity(VerityUtils.java:94)
+E/AccessPersistence( 4753): 	at com.android.server.security.FileIntegrity.setUpFsVerity(FileIntegrity.java:66)
+E/AccessPersistence( 4753): 	at com.android.server.security.FileIntegrity.setUpFsVerity(FileIntegrity.java:50)
+E/AccessPersistence( 4753): 	at com.android.server.permission.access.AccessPersistence.writeSystemState(AccessPersistence.kt:65)
+E/AccessPersistence( 4753): 	at com.android.server.permission.access.AccessPersistence.writePendingState(AccessPersistence.kt:149)
+E/AccessPersistence( 4753): 	at com.android.server.permission.access.AccessPersistence.access$writePendingState(AccessPersistence.kt:41)
+E/AccessPersistence( 4753): 	at com.android.server.permission.access.AccessPersistence$WriteHandler.handleMessage(AccessPersistence.kt:190)
+E/AccessPersistence( 4753): 	at android.os.Handler.dispatchMessage(Handler.java:109)
+E/AccessPersistence( 4753): 	at android.os.Looper.loopOnce(Looper.java:232)
+E/AccessPersistence( 4753): 	at android.os.Looper.loop(Looper.java:317)
+E/AccessPersistence( 4753): 	at android.os.HandlerThread.run(HandlerThread.java:85)
+E/AccessPersistence( 4753): 	at com.android.server.ServiceThread.run(ServiceThread.java:49)
+E/AccessPersistence( 4753): Failed to verity-protect runtime-permissions
+E/AccessPersistence( 4753): java.io.IOException: Failed to enable fs-verity on FD(549): Inappropriate ioctl for device
+E/AccessPersistence( 4753): 	at com.android.internal.security.VerityUtils.setUpFsverity(VerityUtils.java:94)
+E/AccessPersistence( 4753): 	at com.android.server.security.FileIntegrity.setUpFsVerity(FileIntegrity.java:66)
+E/AccessPersistence( 4753): 	at com.android.server.security.FileIntegrity.setUpFsVerity(FileIntegrity.java:50)
+E/AccessPersistence( 4753): 	at com.android.server.permission.access.AccessPersistence.writeUserState(AccessPersistence.kt:65)
+E/AccessPersistence( 4753): 	at com.android.server.permission.access.AccessPersistence.writePendingState(AccessPersistence.kt:151)
+E/AccessPersistence( 4753): 	at com.android.server.permission.access.AccessPersistence.access$writePendingState(AccessPersistence.kt:41)
+E/AccessPersistence( 4753): 	at com.android.server.permission.access.AccessPersistence$WriteHandler.handleMessage(AccessPersistence.kt:190)
+E/AccessPersistence( 4753): 	at android.os.Handler.dispatchMessage(Handler.java:109)
+E/AccessPersistence( 4753): 	at android.os.Looper.loopOnce(Looper.java:232)
+E/AccessPersistence( 4753): 	at android.os.Looper.loop(Looper.java:317)
+E/AccessPersistence( 4753): 	at android.os.HandlerThread.run(HandlerThread.java:85)
+E/AccessPersistence( 4753): 	at com.android.server.ServiceThread.run(ServiceThread.java:49)
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+W/Thread-8(18398): type=1400 audit(0.0:907): avc:  denied  { search } for  name="block" dev="tmpfs" ino=9339 scontext=u:r:untrusted_app:s0:c223,c256,c512,c768 tcontext=u:object_r:block_device:s0 tclass=dir permissive=0
+W/libc    (18398): Access denied finding property "ro.debuggable"
+V/GrammaticalInflectionUtils( 4753): AttributionSource: android.content.AttributionSource@5bafd94f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+W/OptProp ( 4753): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+I/ActivityTaskManager( 4753): START u0 {cmp=com.kcstream.cing/.activity.MainActivity (has extras)} with LAUNCH_MULTIPLE from uid 10223 (sr=162301807) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+V/WindowManagerShell( 5053): Transition requested (#38): android.os.BinderProxy@947355d TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=40 effectiveUid=10223 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity } baseActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} topActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.MainActivity} origActivity=null realActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} numActivities=2 lastActiveTime=2869122 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@8823ed2} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 85 - 0, 0) topActivityInfo=ActivityInfo{704eba3 com.kcstream.cing.activity.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(282, 672 - 799, 1752) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 38 }
+D/BackgroundInstallControlService( 4753): Package event received: 0
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BiometricService( 4753): canAuthenticate: User=0, Caller=0, Authenticators=255
+D/BiometricService/PreAuthInfo( 4753): Package: com.kcstream.cing Sensor ID: 0 Modality: 2 Status: 1
+D/BiometricService/PreAuthInfo( 4753): getCanAuthenticateInternal Modality: 2 AuthenticatorStatus: 1
+D/AuthService( 4753): canAuthenticate, userId: 0, callingUserId: 0, authenticators: 255, result: 0
+W/HWUI    (18398): Image decoding logging dropped!
+W/Glide   (18398): Failed to find GeneratedAppGlideModule. You should include an annotationProcessor compile dependency on com.github.bumptech.glide:compiler in your application and a @GlideModule annotated AppGlideModule implementation or LibraryGlideModules will be silently ignored
+W/HWUI    (18398): Image decoding logging dropped!
+D/ConnectivityService( 4753): requestNetwork for uid/pid:10223/18398 activeRequest: null callbackRequest: 206 [NetworkRequest [ REQUEST id=207, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10223 RequestorPkg: com.kcstream.cing UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+D/WifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=207, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10223 RequestorPkg: com.kcstream.cing UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=207, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10223 RequestorPkg: com.kcstream.cing UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=207, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10223 RequestorPkg: com.kcstream.cing UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=207, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10223 RequestorPkg: com.kcstream.cing UnderlyingNetworks: Null] ]
+D/ConnectivityService( 4753): NetReassign [207 : null → 100] [c 1] [a 3] [i 4]
+I/okhttp.OkHttpClient(18398): --> GET https://api.explorethefrontierforlimitlessimaginationanddiscov.com/71b8acf33b508c7543592acd9d9eb70d/updateApp
+D/CoreBackPreview( 4753): Window{6a30964 u0 com.kcstream.cing/com.kcstream.cing.activity.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@9a91882, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+I/okhttp.OkHttpClient(18398): Token: XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY
+I/okhttp.OkHttpClient(18398): --> GET https://api.explorethefrontierforlimitlessimaginationanddiscov.com/330cceade91a6a9cd30fb8042222ed56/71b8acf33b508c7543592acd9d9eb70d/recent
+I/okhttp.OkHttpClient(18398): Accept: application/json
+I/okhttp.OkHttpClient(18398): AppBuildCode: 25301
+I/okhttp.OkHttpClient(18398): AppSignature: pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH
+I/okhttp.OkHttpClient(18398): --> END GET
+I/okhttp.OkHttpClient(18398): Token: XbGSFkQsJYbFC6pcUMCFL4oNHULvHU7WdDAXYgpmqYlh7p5ZCQ4QZ13GDgowiOGvAejz9X5H6DYvEQBMrc3A17SO3qwLwVkbn6YY
+I/okhttp.OkHttpClient(18398): Accept: application/json
+I/okhttp.OkHttpClient(18398): AppBuildCode: 25301
+I/okhttp.OkHttpClient(18398): AppSignature: pOplm8IDEDGXN55IaYohQ8CzJFvWsfXyhGvwPRD9kWgzYSRuuvAOPfsE0AJbHVbAJyWGsGCNUIuQLJ7HbMbuFLMWwDgHNwxOrYMH
+I/okhttp.OkHttpClient(18398): --> END GET
+W/RecyclerView(18398): No adapter attached; skipping layout
+I/ActivityTaskManager( 4753): Displayed com.kcstream.cing/.activity.MainActivity for user 0: +378ms
+V/WindowManager( 4753): Sent Transition (#38) createdAt=11-23 21:45:32.166 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=40 effectiveUid=10223 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity } baseActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} topActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.MainActivity} origActivity=null realActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} numActivities=2 lastActiveTime=2869122 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{f826798 Task{e93ac7c #40 type=standard A=10223:com.kcstream.cing}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 85 - 0, 0) topActivityInfo=ActivityInfo{e7d35da com.kcstream.cing.activity.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(282, 672 - 799, 1752) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 38 }
+V/WindowManager( 4753):     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+V/WindowManager( 4753):     info={id=38 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManager( 4753):         {m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{127296539 u0 com.kcstream.cing/.activity.MainActivity)/@0x4a420fc sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=-1->0 r=-1->0:-1 bc=ff141218 component=com.kcstream.cing/.activity.MainActivity opt={t=FROM_STYLE mUserId=0}},
+V/WindowManager( 4753):         {m=CLOSE f=FILLS_TASK leash=Surface(name=ActivityRecord{162301807 u0 com.kcstream.cing/.activity.SplashActivity)/@0x99bfdef sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 bc=ff141218 component=com.kcstream.cing/.activity.SplashActivity opt={t=FROM_STYLE mUserId=0}}
+V/WindowManager( 4753):     ]}
+V/WindowManagerShell( 5053): onTransitionReady(transaction=20413979559542)
+V/WindowManagerShell( 5053): onTransitionReady (#38) android.os.BinderProxy@947355d: {id=38 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManagerShell( 5053):         {m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{127296539 u0 com.kcstream.cing/.activity.MainActivity)/@0xff62ea0 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=-1->0 r=-1->0:-1 bc=ff141218 component=com.kcstream.cing/.activity.MainActivity opt={t=FROM_STYLE mUserId=0}},
+V/WindowManagerShell( 5053):         {m=CLOSE f=FILLS_TASK leash=Surface(name=ActivityRecord{162301807 u0 com.kcstream.cing/.activity.SplashActivity)/@0xdc6ca59 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 bc=ff141218 component=com.kcstream.cing/.activity.SplashActivity opt={t=FROM_STYLE mUserId=0}}
+V/WindowManagerShell( 5053):     ]}
+V/WindowManagerShell( 5053): Playing animation for (#38) android.os.BinderProxy@947355d@0
+V/ShellRecents( 5053): RecentsTransitionHandler.startAnimation: no controller found
+V/WindowManagerShell( 5053): Transition doesn't have explicit remote, search filters for match for {id=38 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{127296539 u0 com.kcstream.cing/.activity.MainActivity)/@0xff62ea0 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=-1->0 r=-1->0:-1 bc=ff141218 component=com.kcstream.cing/.activity.MainActivity opt={t=FROM_STYLE mUserId=0}},{m=CLOSE f=FILLS_TASK leash=Surface(name=ActivityRecord{162301807 u0 com.kcstream.cing/.activity.SplashActivity)/@0xdc6ca59 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 bc=ff141218 component=com.kcstream.cing/.activity.SplashActivity opt={t=FROM_STYLE mUserId=0}}]}
+V/WindowManagerShell( 5053):  Delegate animation for (#38) to null
+V/WindowManagerShell( 5053): start default transition animation, info = {id=38 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{127296539 u0 com.kcstream.cing/.activity.MainActivity)/@0xff62ea0 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=-1->0 r=-1->0:-1 bc=ff141218 component=com.kcstream.cing/.activity.MainActivity opt={t=FROM_STYLE mUserId=0}},{m=CLOSE f=FILLS_TASK leash=Surface(name=ActivityRecord{162301807 u0 com.kcstream.cing/.activity.SplashActivity)/@0xdc6ca59 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 bc=ff141218 component=com.kcstream.cing/.activity.SplashActivity opt={t=FROM_STYLE mUserId=0}}]}
+V/WindowManagerShell( 5053): loadAnimation: anim=android.view.animation.AnimationSet@3ead62a animAttr=0x5 type=OPEN isEntrance=false
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+E/BufferQueueProducer( 5053): [[BBQ]Right Edge Extension#504#58(BLAST Consumer)58](id:13bd0000003a,api:0,p:-1,c:5053) disconnect: not connected (req=1)
+W/libEGL  ( 5053): EGLNativeWindowType 0x7c6785fd20 disconnect failed
+V/WindowManagerShell( 5053): loadAnimation: anim=android.view.animation.AnimationSet@a652fcd animAttr=0x4 type=OPEN isEntrance=true
+E/BufferQueueProducer( 5053): [[BBQ]Left Edge Extension#506#59(BLAST Consumer)59](id:13bd0000003b,api:0,p:-1,c:5053) disconnect: not connected (req=1)
+W/libEGL  ( 5053): EGLNativeWindowType 0x7c6785db10 disconnect failed
+V/WindowManagerShell( 5053):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@9e27269
+I/ImeTracker( 4753): com.kcstream.cing:6edfb0df: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+D/InsetsController(18398): hide(ime(), fromIme=false)
+I/ImeTracker(18398): com.kcstream.cing:6edfb0df: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+V/WindowManagerShell( 5053): Transition animation finished (aborted=false), notifying core (#38) android.os.BinderProxy@947355d@0
+V/WindowManager( 4753): Finish Transition (#38): created at 11-23 21:45:32.166 collect-started=0.185ms request-sent=15.021ms started=20.346ms ready=36.001ms sent=374.225ms finished=700.384ms
+D/VRI[SplashActivity](18398): visibilityChanged oldVisibility=true newVisibility=false
+V/WindowManagerShell( 5053): Track 0 became idle
+V/WindowManagerShell( 5053): All active transition animations finished
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+E/BufferQueueProducer(18398): [VRI[SplashActivity]#0(BLAST Consumer)0](id:47de00000000,api:0,p:-1,c:18398) disconnect: not connected (req=1)
+W/libEGL  (18398): EGLNativeWindowType 0x7c676c9330 disconnect failed
+W/WindowOnBackDispatcher(18398): sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@1298094
+D/CoreBackPreview( 4753): Window{a378b59 u0 com.kcstream.cing/com.kcstream.cing.activity.SplashActivity}: Setting back callback null
+D/ViewRootImpl(18398): Skipping stats log for color mode
+W/Settings(18398): Setting development_settings_enabled has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+D/BiometricService( 4753): canAuthenticate: User=0, Caller=0, Authenticators=255
+D/BiometricService/PreAuthInfo( 4753): Package: com.kcstream.cing Sensor ID: 0 Modality: 2 Status: 1
+D/BiometricService/PreAuthInfo( 4753): getCanAuthenticateInternal Modality: 2 AuthenticatorStatus: 1
+D/AuthService( 4753): canAuthenticate, userId: 0, callingUserId: 0, authenticators: 255, result: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+E/WifiStaIfaceAidlImpl( 4753): getCachedScanData failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+I/okhttp.OkHttpClient(18398): <-- 200 https://api.explorethefrontierforlimitlessimaginationanddiscov.com/330cceade91a6a9cd30fb8042222ed56/71b8acf33b508c7543592acd9d9eb70d/recent (551ms)
+I/okhttp.OkHttpClient(18398): date: Mon, 23 Nov 2026 14:45:33 GMT
+I/okhttp.OkHttpClient(18398): content-type: application/json; charset=utf-8
+I/okhttp.OkHttpClient(18398): nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+I/okhttp.OkHttpClient(18398): vary: Accept-Encoding
+I/okhttp.OkHttpClient(18398): set-cookie: sl-session=fBbEWQ2jBWtOKPuTJaTfeA==; Path=/; Max-Age=86400; HttpOnly
+I/okhttp.OkHttpClient(18398): cf-cache-status: DYNAMIC
+I/okhttp.OkHttpClient(18398): report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dGjqNluxE2VQuf0ry4r7VaNvB8OCE16nbRYErhz57rABkLhcrHUovteimkFKN1Itm308UHX%2Bv%2B8KJpEymU2qD%2FQZvHvSU7KtpoPREzPXEJovg8pnq90%2ByamRadRVB2DbRDeDOyodMZ8%2B7GRzOX1wkC8wbuP6xHOEnn74U%2B%2BuUle317p%2F3KCljvvH5gdN"}]}
+I/okhttp.OkHttpClient(18398): server: cloudflare
+I/okhttp.OkHttpClient(18398): cf-ray: a5f0f5553f1ff892-SIN
+I/okhttp.OkHttpClient(18398): alt-svc: h3=":443"; ma=86400
+I/okhttp.OkHttpClient(18398): {"carousel":[{"id":31498,"date":"2026-11-11 23:00:51","title":"So_Low","slug":"so_low","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/06/So_low3.jpg","description":"Seorang Guru les yang mesum, mendapatkan pekerjaan dari kantornya untuk mengajar anak dari teman baik direktur di kantornya tersebut, namun yang terjadi anak dan ibunya malah diperkosa..."},{"id":64584,"date":"2026-11-11 18:38:30","title":"Harem Shima e Youkoso!","slug":"harem-shima-e-youkoso","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/08/Harem-Shima-e-Youkoso2.jpg","description":"Sebuah klub eksplorasi yang terdiri dari satu pria dan tiga wanita mengalami kecelakaan saat berlibur dan terdampar di sebuah pulau misterius di dunia lain bernama <strong>Pulau Harem</strong>. Pulau ini hampir seluruh penduduknya adalah wanita. Setelah mendapat pesan dari dewa melalui mimpi, mereka diminta mengembangkan pulau tersebut agar menjadi destinasi wisata. Di tengah usaha mereka menjelajahi pulau dan bertemu para wanita cantik, hubungan antara mereka perlahan menjadi semakin dekat.\r\nNamun, di balik kehidupan seperti surga itu, muncul satu pertanyaan: <strong>apakah mereka benar-benar bisa kembali ke dunia asal?</strong>"},{"id":68125,"date":"2026-11-09 21:53:33","title":"Hitori Tsuma","slug":"hitori-tsuma","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/Hitori-Tsuma1.jpg","description":"<span class=\"\">Kecewa karena suaminya malah asyik menggoda wanita lain di rumah sakit,</span> Yukina memilih menepi ke koridor dan bertemu Yuto, pria hangat yang memberinya kenyamanan instan. Pertemuan acak itu berlanjut hingga Yukina akhirnya bekerja di kafe baru milik Yuto tempat di mana rasa nyaman perlahan berubah menjadi ikatan emosional yang tak pernah ia dapatkan di rumah."},{"id":66959,"date":"2026-11-08 12:48:34","title":"Muramata-san no Aijou","slug":"muramata-san-no-aijou","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/10/Muramata-san-no-Aijou2.jpg","description":"Muramata-san, seorang atasan populer yang sangat disukai semua orang, ternyata memiliki rahasia besar: di luar kantor, ia adalah sosok manja dan cengeng yang menjalin hubungan asmara rahasia dengan bawahannya, Kaji-kun, serta memiliki keunikan lidah bercabang. Meski Kaji-kun sempat mencemaskan perbedaan posisi jabatan mereka, ia tetap memantapkan hati untuk menyerahkan pengalaman “pertama kalinya” kepada Muramata-san yang penyayang."},{"id":66944,"date":"2026-11-08 00:28:09","title":"Mujikaku na Osananajimi to Kyoumi Honi de Yattemitara The Animation","slug":"mujikaku-na-osananajimi-to-kyoumi-honi-de-yattemitara-the-animation","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/10/Mujikaku-na-Osananajimi-to-Kyoumi-Honi-de-Yatte-Mitara-The-Animation3.jpg","description":"<p data-path-to-node=\"3\">Meiko adalah murid teladan yang dikenal pendiam dan jago banget di sekolah. Tapi, dia cuma bisa benar-benar santai dan jadi dirinya sendiri di depan Hiroki, teman masa kecilnya.</p>\r\n<p data-path-to-node=\"4\">Suatu hari, saat lagi nongkrong di kamar Hiroki pakai pakaian yang agak terbuka, Hiroki nggak sengaja kedapatan merhatiin tubuhnya. Pas Meiko negur, Hiroki langsung salah tingkah sampai mukanya merah padam. Di luar dugaan, Meiko malah senyum lembut dan nawarin sesuatu yang bikin kaget, \"Mau pegang nggak...?\"</p>\r\n<p data-path-to-node=\"5\">Dari situ, rasa penasaran yang awalnya biasa aja berubah jadi makin intim, sampai akhirnya hubungan mereka berdua melewati batas teman masa kecil.</p>"},{"id":67981,"date":"2026-11-06 16:57:25","title":"Honoo no Haramase Tenkousei","slug":"honoo-no-haramase-tenkousei","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/282384.jpg","description":"<p dir=\"ltr\" data-path-to-node=\"0\">Tatsuya Tagami punya cita-cita besar yang terbilang mustahil: menaklukkan dunia! Langkah pertamanya? Menghamili seluruh 
+I/okhttp.OkHttpClient(18398): teman sekelas perempuannya.</p>\r\n<p dir=\"ltr\" data-path-to-node=\"0\">Rencananya tentu terbentur kenyataan karena ia bersekolah di SMA khusus laki-laki. Tak kehabisan akal, Tatsuya pun memutuskan pindah ke Akademi Hakuka yaitu bekas sekolah khusus perempuan yang baru saja diubah menjadi sekolah campuran.</p>\r\n\r\n<div id=\"gtx-trans\" style=\"position: absolute; left: 651px; top: 135.667px;\">\r\n<div class=\"gtx-trans-icon\"></div>\r\n</div>"},{"id":52024,"date":"2026-10-31 00:00:57","title":"Sister Breeder","slug":"sister-breeder","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/03/OVA-Sister-Breeder5.jpg","description":"Cerita ini mengisahkan kakak beradik perempuan, Rena dan Aina, yang tumbuh bersama dengan saudara tiri laki-laki mereka, Shouta. Awalnya, Shouta menunjukkan kasih sayang berlebihan pada Aina, namun lama-kelamaan sikapnya semakin intens. Saat Rena mencoba melindungi adiknya, justru dirinya yang menjadi sasaran perhatian Shouta. Perasaan terpendam terhadap Shouta bercampur dengan pengalaman baru yang mengguncang hidupnya, membuat Reina perlahan-lahan terseret dalam arus hasrat yang tak pernah ia bayangkan sebelumnya."},{"id":42384,"date":"2026-10-30 19:54:33","title":"Futari no Yumemochi","slug":"futari-no-yumemochi","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2024/11/99710h.jpg","description":"Menceritakan 2 gadis yang saling menyukai dan mengagumi satu sama lain. Ninomae Hinoki-san, ketua kelas yang cantik dan pintar serta dihormati semua orang. Lalu, Kusunoki Yuzume-san, gadis yang baik hati dan menggemaskan, yang disukai banyak orang. Mereka saling menyukai namun tidak ada yang berani untuk menyatakan perasaan itu, hingga akhirnya Yuzume-san memergoki Hinoki-san sedang masturbasi menggunakan pakaian olahraganya Yuzume-san. Mulai dari situlah, perasaan mereka satu per satu mulai terungkap..."},{"id":67728,"date":"2026-10-29 20:52:34","title":"Maid in Heaven SuperS","slug":"maid-in-heaven-supers","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/10/Maid-in-Heaven-SuperS-cover.jpg","description":"Nagisa akhirnya berhasil mewujudkan impian masa kecilnya untuk tinggal serumah dan menjadi pelayan pribadi bagi Yuusuke, pria yang selalu ia kagumi. Namun, alih-alih pekerjaan rumah tangga biasa, Yuusuke menerapkan aturan ketat ala hubungan tuan dan budak yang penuh dengan sisi dominasi dan perversi. Menariknya, Nagisa justru menikmati setiap permainan sadistik tersebut, membuat kebersamaan mereka berdua menjadi kisah romansa unik yang penuh gairah dan tak biasa."},{"id":66734,"date":"2026-10-25 00:00:05","title":"Oushun Jogakuin no Danyuu","slug":"oushun-jogakuin-no-danyuu","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/10/7554711_1_202609200138128.jpg","description":"<p data-pm-slice=\"1 1 []\">Sekolah Putri Oushun adalah sekolah elit yang hanya menerima putri-putri dari keluarga terpandang. Seorang pria yang terlalu mendalami dunia akting justru kesulitan mendapatkan pekerjaan. Hingga akhirnya, ia direkrut sebagai pekerja serabutan di Sekolah Putri Oushun. Namun, pekerjaan tersebut hanyalah kedok semata. Pekerjaan sebenarnya adalah menjadi seorang aktor yang ditugaskan untuk berperan sebagai sosok pria ideal bagi para siswi. Demi menjaga kondisi psikologis para gadis elit yang hidup dalam tekanan, ia harus memainkan berbagai karakter sesuai dengan keinginan masing-masing siswi, sekaligus menjadi tempat bagi mereka untuk meluapkan stres dan hasrat yang selama ini terpendam.</p>"}],"posts":[{"category":"Hentai","data":[{"id":68221,"date":"2026-11-23 14:51:41","title":"[UNCENSORED] Hitozukiai ga Nigate na Miboujin no Yukionna-san to Noroi no Yubiwa Episode 7 Subtitle Indonesia","slug":"uncensored-hitozukiai-ga-nigate-na-miboujin-no-yukionna-san-to-noroi-no-yubiwa-episode-7-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-23-14h01
+I/okhttp.OkHttpClient(18398): m18s588-150x150.jpg","description":null},{"id":68192,"date":"2026-11-20 18:09:10","title":"[UNCENSORED] Mouse Cursor de Genjitsu o Sosa Dekiru Yo ni Natta node Episode 6 Subtitle Indonesia","slug":"uncensored-mouse-cursor-de-genjitsu-o-sosa-dekiru-yo-ni-natta-node-episode-6-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-20-18h07m09s971-150x150.jpg","description":null},{"id":68186,"date":"2026-11-20 17:11:50","title":"[UNCENSORED] Hitozukiai ga Nigate na Miboujin no Yukionna-san to Noroi no Yubiwa Episode 6 Subtitle Indonesia","slug":"uncensored-hitozukiai-ga-nigate-na-miboujin-no-yukionna-san-to-noroi-no-yubiwa-episode-6-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-20-16h48m19s390-150x150.jpg","description":null},{"id":68127,"date":"2026-11-10 00:09:43","title":"[NEW Release] Hitori Tsuma Episode 1 Subtitle Indonesia","slug":"hitori-tsuma-episode-1-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-09-23h58m01s671-150x150.jpg","description":null},{"id":68121,"date":"2026-11-09 15:41:26","title":"[UNCENSORED] Mouse Cursor de Genjitsu o Sosa Dekiru Yo ni Natta node Episode 5 Subtitle Indonesia","slug":"uncensored-mouse-cursor-de-genjitsu-o-sosa-dekiru-yo-ni-natta-node-episode-5-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-09-15h22m05s793-150x150.jpg","description":null},{"id":68116,"date":"2026-11-09 13:16:01","title":"[UNCENSORED] Hitozukiai ga Nigate na Miboujin no Yukionna-san to Noroi no Yubiwa Episode 5 Subtitle Indonesia","slug":"uncensored-hitozukiai-ga-nigate-na-miboujin-no-yukionna-san-to-noroi-no-yubiwa-episode-5-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-09-13h11m47s917-150x150.jpg","description":null},{"id":68112,"date":"2026-11-09 09:59:06","title":"[NEW Release] So_Low Episode 4 Subtitle Indonesia","slug":"so_low-episode-4-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-09-09h48m09s030-150x150.jpg","description":null},{"id":68103,"date":"2026-11-08 22:50:58","title":"[NEW Release] Harem Shima e Youkoso! Episode 2 Subtitle Indonesia","slug":"harem-shima-e-youkoso-episode-2-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-08-22h44m33s046-150x150.jpg","description":null},{"id":68093,"date":"2026-11-08 17:28:08","title":"[NEW Release] Muramata-san no Aijou Episode 2 Subtitle Indonesia","slug":"muramata-san-no-aijou-episode-2-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-08-17h04m47s204-150x150.jpg","description":null},{"id":68041,"date":"2026-11-08 17:20:11","title":"[NEW Release] Mujikaku na Osananajimi to Kyoumi Honi de Yatte Mitara The Animation Episode 3 Subtitle Indonesia","slug":"mujikaku-na-osananajimi-to-kyoumi-honi-de-yatte-mitara-the-animation-episode-3-subtitle-indonesia","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-08-06h35m08s131-150x150.jpg","description":null}]},{"category":"2D Animation","data":[{"id":68172,"date":"2026-11-20 15:53:27","title":"[L2D SUB INDO] Naruto Lepas Kendali Melahap Tante Kushina Sampai Basah Banget - NARUTO","slug":"l2d-sub-indo-naruto-lepas-kendali-melahap-tante-kushina-sampai-basah-banget-naruto","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-20-15h50m38s697-150x150.jpg","description":null},{"id":68138,"date":"2026-11-10 20:16:51","title":"[L2D SUB INDO] Rahasia Cinta Segitiga Antara Zenith X Lilia X Paul Saat Malam Birahi - Mushoku Tensei","slug":"l2d-sub-indo-rahasia-cinta-segitiga-antara-zenith-x-lilia-x-paul-saat-malam-bira
+I/okhttp.OkHttpClient(18398): hi-mushoku-tensei","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-10-20h09m23s082-150x150.jpg","description":null},{"id":68063,"date":"2026-11-08 18:56:44","title":"[L2D] Hubungan Terlarang Rudy X Norn Saat Ngak Ada Orang Dirumah - Mushoku Tensei","slug":"l2d-hubungan-terlarang-rudy-x-norn-saat-ngak-ada-orang-dirumah-mushoku-tensei","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-08-15h43m31s185-150x150.jpg","description":null},{"id":68079,"date":"2026-11-08 16:25:40","title":"[L2D] Mencicipin Furry Mesum Lola Bunny Oppai-nya Bulet Banget","slug":"l2d-mencicipin-furry-mesum-lola-bunny-oppai-nya-bulet-banget","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-08-16h21m46s526-150x150.jpg","description":null},{"id":68024,"date":"2026-11-07 17:54:43","title":"[L2D SUB INDO] Pilih Dipuasin Anko Uguisu Menjadi Manusia Atau Mati Jadi Vampire - Yofukashi no Uta","slug":"l2d-sub-indo-pilih-dipuasin-anko-uguisu-menjadi-manusia-atau-mati-jadi-vampire-yofukashi-no-uta","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-07-15h18m54s248-150x150.jpg","description":null},{"id":68028,"date":"2026-11-07 15:45:05","title":"[L2D SUB INDO] Shota Kecil Pengen Mimik Susu Dari Oppai Gede Sepulang Sekolah","slug":"l2d-sub-indo-shota-kecil-pengen-mimik-susu-dari-oppai-gede-sepulang-sekolah","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-07-15h24m53s925-150x150.jpg","description":null},{"id":68013,"date":"2026-11-07 14:01:38","title":"[L2D SUB INDO] Oppai Besar Gadis Club Renang Dihipnotis Pelatih Mesum Sampai Ketagihan Keluar Sampai Basah","slug":"l2d-sub-indo-oppai-besar-gadis-club-renang-dihipnotis-pelatih-mesum-sampai-ketagihan-keluar-sampai-basah","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-07-13h44m27s091-150x150.jpg","description":null},{"id":68000,"date":"2026-11-06 19:48:51","title":"[L2D SUB INDO] 4K Version - Malam Berduaan Hanabi Menggoda Kawaki Yang Sedang Birahi Banget - Boruto: Naruto Next Generations","slug":"l2d-sub-indo-4k-version-malam-berduaan-hanabi-menggoda-kawaki-yang-sedang-birahi-banget-boruto-naruto-next-generations","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-06-19h46m16s668-150x150.jpg","description":null},{"id":67978,"date":"2026-11-06 17:23:42","title":"[L2D] 4K Version - Kesempatan Emas Jeane Amona Untuk Berhubungan Seks PART 2 - Dark Summoner","slug":"l2d-4k-version-kesempatan-emas-jeane-amona-untuk-berhubungan-seks-part-2-dark-summoner","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-06-16h35m42s798-150x150.jpg","description":null},{"id":67966,"date":"2026-11-06 15:19:19","title":"[L2D-AI SUB INDO] Kenangan Terakhir Ichika Nakano Sebelum Futaro Menikah -  5-toubun no Hanayome","slug":"l2d-ai-sub-indo-kenangan-terakhir-ichika-nakano-sebelum-futaro-menikah-5-toubun-no-hanayome","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-06-14h50m10s261-150x150.jpg","description":null}]},{"category":"3D Hentai","data":[{"id":68211,"date":"2026-11-22 16:14:19","title":"[3D] Lynae Dan FRover Digenjot Sampai Crot Berkali-Kali! – Wuthering Waves","slug":"3d-lynae-dan-frover-digenjot-sampai-crot-berkali-kali-wuthering-waves","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/kamihikoki_mmd-lynae-frover-spa-150x150.jpg","description":null},{"id":68189,"date":"2026-11-20 17:56:51","title":"[3D SUB INDO] Permintaan Peri Mesum Pengen Ngewe Sama Bu Guru Matematika Saat Ini Juga","slug":"3d-sub-indo-permintaan-peri-mesum-pengen-ngewe-sama-bu-guru-matematika-saat-ini-juga","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-20-17h53m37s9
+I/okhttp.OkHttpClient(18398): 67-150x150.jpg","description":null},{"id":68066,"date":"2026-11-08 16:08:21","title":"[3D] Tante Tauren Suka Hubungan NTR Yang Memikat","slug":"3d-tante-tauren-suka-hubungan-ntr-yang-memikat","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-08-16h04m18s737-150x150.jpg","description":null},{"id":68058,"date":"2026-11-08 14:52:48","title":"[3D SUB INDO] Pemeriksaan Rutin Kontlo Bersama Bu Dokter Semok","slug":"3d-pemeriksaan-rutin-kontlo-bersama-bu-dokter-semok","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-08-14h46m17s480-150x150.jpg","description":null},{"id":68049,"date":"2026-11-08 07:41:39","title":"[3D] NTR Yao Guang Tak Puas Dengan Satu Penis Pria Haus Melayani Banyak Pria Sangean!","slug":"3d-ntr-yao-guang-tak-puas-dengan-satu-penis-pria-haus-melayani-banyak-pria-sangean","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/3D-Hentai-Honkai-Star-Rail-NTR-Yao-Guang-Tak-Puas-Dengan-Satu-Penis-Pria-Haus-Melayani-Banyak-Pria-Sangean-NekoPoi-150x150.jpg","description":null},{"id":68031,"date":"2026-11-07 17:00:33","title":"[3D] Tamaki Disuruh Tuan Cosplay Jadi Maid Pink - Dead Or Alive","slug":"3d-tamaki-disuruh-tuan-cosplay-jadi-maid-pink-dead-or-alive","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-07-14h37m15s838-150x150.jpg","description":null},{"id":68020,"date":"2026-11-07 15:14:54","title":"[3D SUB INDO] 4K - Terjebak Dirumah Sakit Ellie Masih Sempet Pengen Ngewe -  The Last of Us","slug":"3d-sub-indo-4k-terjebak-dirumah-sakit-ellie-masih-sempet-pengen-ngewe-the-last-of-us","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-07-14h02m38s648-150x150.jpg","description":null},{"id":67992,"date":"2026-11-06 18:45:58","title":"[3D SUB INDO] Ketahuan Ngitip Mama Temen Mandi Malah Diajak Mandi Bareng","slug":"l2d-ketahuan-ngitip-mama-temen-mandi-malah-diajak-mandi-bareng","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-06-18h51m07s458-150x150.jpg","description":null},{"id":67969,"date":"2026-11-06 15:36:56","title":"[3D] Halloween Party Sama Tifa Dan Aerith Bikin Tegang Banget - Final Fantasy","slug":"3d-halloween-party-sama-tifa-dan-aerith-bikin-tegang-banget-final-fantasy","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-06-15h20m25s529-150x150.jpg","description":null},{"id":67926,"date":"2026-11-04 14:55:10","title":"[3D SUB INDO] Tifa Pengen Hadiah Kontlo Kamu Malam Ini - Final Fantasy","slug":"3d-sub-indo-tifa-pengen-hadiah-kontlo-kamu-malam-ini-final-fantasy","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-04-14h53m41s973-150x150.jpg","description":null}]},{"category":"JAV","data":[{"id":68202,"date":"2026-11-21 16:20:39","title":"MCY-0254 Spesial Pendidikan Seksualitas Godaan Guru Berpayudara Yang Indah Membuatku Tak Tahan Lagi !","slug":"mcy-0254-spesial-pendidikan-seksualitas-godaan-guru-berpayudara-yang-indah-membuatku-tak-tahan-lagi","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/Chinese-Porn-MCY-0254-Spesial-Pendidikan-Seksualitas-Godaan-Guru-Berpayudara-Yang-Indah-Membuatku-Tak-Tahan-Lagi-NekoPoi-150x150.jpg","description":null},{"id":68195,"date":"2026-11-20 23:04:00","title":"MD-0313 Para Pengemis Sange Menyetubuhi Ibu Dan Anak Dalam Perayaan Festival Lampion","slug":"md-0313-para-pengemis-sange-menyetubuhi-ibu-dan-anak-dalam-perayaan-festival-lampion","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/Chinese-Porn-MD-0313-Para-Pengemis-Sange-Menyetubuhi-Ibu-Dan-Anak-Dalam-Perayaan-Festival-Lampion-NekoPoi-150x150.jpg","description":null},{"id":68182,"date":"2026-11-20 16:38:44","title":"NGOD-366 Ngak Enak Diklomplain Potongan Rambut Kurang Bagus Istriku Rela Memberikan Pelayanan Khusus 
+I/okhttp.OkHttpClient(18398): Untuk Pelanggan Dengan Oppai-nya Yang Gede Dan Lembut Langsung Ditempat ! - Sannoki Kanna","slug":"ngod-366-ngak-enak-diklomplain-potongan-rambut-kurang-bagus-istriku-rela-memberikan-pelayanan-khusus-untuk-pelanggan-dengan-oppai-nya-yang-gede-dan-lembut-langsung-ditempat-sannoki-kanna","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/ngod00366jp-2-150x150.jpg","description":null},{"id":68167,"date":"2026-11-20 04:10:19","title":"91CM-172 Pulang Ke Rumah Mendapati Pacarnya Berselingkuh","slug":"91cm-172-pulang-ke-rumah-mendapati-pacarnya-berselingkuh","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/Chinese-Porn-91CM-172-Pulang-Ke-Rumah-Mendapati-Pacarnya-Berselingkuh-NekoPoi-150x150.jpg","description":null},{"id":68150,"date":"2026-11-12 06:59:09","title":"XK-8179 Menerima Panggilan Dari Nomor Tak Dikenal Ibu Rumah Tangga Seksi Berujung Diperkosa Secara Brutal","slug":"xk-8179-menerima-panggilan-dari-nomor-tak-dikenal-ibu-rumah-tangga-seksi-berujung-diperkosa-secara-brutal","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/Chinese-Porn-XK-8179-Menerima-Panggilan-Dari-Nomor-Tak-Dikenal-Ibu-Rumah-Tangga-Seksi-Berujung-Diperkosa-Secara-Brutal-NekoPoi-150x150.jpg","description":null},{"id":68142,"date":"2026-11-11 10:02:32","title":"[UNCENSORED] RAS-0170 Menikmati Cewek Cantik Dan Seksi Di Malam Pertama Pengantin Baru – Lin Siyu","slug":"uncensored-ras-0170-menikmati-cewek-cantik-dan-seksi-di-malam-pertama-pengantin-baru-lin-siyu","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/JAV-UNCENSORED-RAS-0170-Menikmati-Cewek-Cantik-Dan-Seksi-Di-Malam-Pertama-Pengantin-Baru-–-Lin-Siyu-NekoPoi-150x150.jpg","description":null},{"id":68134,"date":"2026-11-10 20:06:41","title":"MIDA-441 Oppai Gede Ibu Tiri-ku Membuatku Ngak Jadi Benci Padanya Dan Pengen Mimik Susu Sampai Puas Dengan Oppainya Yang Gede Setiap Hari !  - Himari","slug":"mida-441-oppai-gede-ibu-tiri-ku-membuatku-ngak-jadi-benci-padanya-dan-pengen-mimik-susu-sampai-puas-dengan-oppainya-yang-gede-setiap-hari-himari","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/vlcsnap-2026-11-10-20h02m33s632-150x150.jpg","description":null},{"id":68131,"date":"2026-11-10 06:34:24","title":"[UNCENSORED] TWAV-S01 Gadis Cantik Yang Terjebak Permainan Squid Game Dengan Ikatan Tali Neraka!","slug":"uncensored-twav-s01-gadis-cantik-yang-terjebak-permainan-squid-game-dengan-ikatan-tali-neraka","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/JAV-UNCENSORED-TWAV-S01-Gadis-Cantik-Yang-Terjebak-Permainan-Squid-Game-Dengan-Ikatan-Tali-Neraka-NekoPoi-150x150.jpg","description":null},{"id":68107,"date":"2026-11-09 07:24:22","title":"MDSR-0004-2 Chief Investment Officer Melatih Para Lesbian Ke Jalan Yang Benar Sambil Menikmati Tubuh Mereka Di Hotel","slug":"mdsr-0004-2-chief-investment-officer-melatih-para-lesbian-ke-jalan-yang-benar-sambil-menikmati-tubuh-mereka-di-hotel","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/Chinese-Porn-MDSR-0004-2-Chief-Investment-Officer-Melatih-Para-Lesbian-Ke-Jalan-Yang-Benar-Sambil-Menikmati-Tubuh-Mereka-Di-Hotel-NekoPoi-150x150.jpg","description":null},{"id":68098,"date":"2026-11-08 22:39:28","title":"SWIC-0003 Penyiar Seksi Berpayudara Besar Diam-Diam Menikmati Aksi Panas Saat Sedang Siaran Berita","slug":"swic-0003-penyiar-seksi-berpayudara-besar-diam-diam-menikmati-aksi-panas-saat-sedang-siaran-berita","image":"https://p.3z094n2681i06q8k14w31cu4q80d5p.com/wp-content/uploads/2026/11/Chinese-Porn-SWIC-0003-Penyiar-Seksi-Berpayudara-Besar-Diam-Diam-Menikmati-Aksi-Panas-Saat-Sedang-Siaran-Berita-NekoPoi-150x150.jpg","description":null}]}]}
+I/okhttp.OkHttpClient(18398): <-- END HTTP (23791-byte body)
+W/WindowOnBackDispatcher(18398): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(18398): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+W/BitmapDrawable(18398): BitmapDrawable created with null Bitmap
+W/BitmapDrawable(18398): BitmapDrawable created with null Bitmap
+I/okhttp.OkHttpClient(18398): <-- 200 https://api.explorethefrontierforlimitlessimaginationanddiscov.com/71b8acf33b508c7543592acd9d9eb70d/updateApp (603ms)
+I/okhttp.OkHttpClient(18398): date: Mon, 23 Nov 2026 14:45:33 GMT
+I/okhttp.OkHttpClient(18398): content-type: application/json; charset=utf-8
+I/okhttp.OkHttpClient(18398): nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+I/okhttp.OkHttpClient(18398): vary: Accept-Encoding
+I/okhttp.OkHttpClient(18398): set-cookie: sl-session=z/8Leg2jBWuXkI+CdyRkoQ==; Path=/; Max-Age=86400; HttpOnly
+I/okhttp.OkHttpClient(18398): cf-cache-status: DYNAMIC
+I/okhttp.OkHttpClient(18398): report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TMOF1eKfgQd9OciS1sE6GcRSyeMB7vXKdbFExc2Aq0%2FhtUJaPHoJICq9G4sfQHjT7rKrxmd5S0JXgWE4jLH4faJ43iOHGE6axyNM%2BlczuFaDtAZpiuQKMqeFMg5SHErgHsWRgKb2%2BEUIdyvfMvaLvbPdTG17RLLSWDCIgZrYljWueHIuCFCNYb%2F6R1AN"}]}
+I/okhttp.OkHttpClient(18398): server: cloudflare
+I/okhttp.OkHttpClient(18398): cf-ray: a5f0f55558cea066-SIN
+I/okhttp.OkHttpClient(18398): alt-svc: h3=":443"; ma=86400
+W/BitmapDrawable(18398): BitmapDrawable created with null Bitmap
+I/okhttp.OkHttpClient(18398): {"latestVersion":"2.5.3-build01","latestVersionCode":"25301","bda":"true","oneLi":"FamKHTm94HBiriZeKxfU27PCUVgkUC","updateUrl":"https://dfiledd.explorethefrontierforlimitlessimaginationanddiscov.com/1b277fbcb697da33172a9582e90a1c96/apkUpdateBuild25301.apk","adFilterUrl":"https://linkpoi.me/app/adfilter","adMainUrl1":"https://linkpoi.me/spots-res","adMainUrl2":"https://linkpoi.me/appad","releaseNotes":["- Perbaikan link chat","- Perbaikan pada streaming","- Beberapa perbaikan minor","- Dukungan pada Android 15","","Buka http://linkpoi.me/neko jika gagal download"]}
+I/okhttp.OkHttpClient(18398): <-- END HTTP (570-byte body)
+W/BitmapDrawable(18398): BitmapDrawable created with null Bitmap
+W/BitmapDrawable(18398): BitmapDrawable created with null Bitmap
+W/HWUI    (18398): Image decoding logging dropped!
+W/Settings(18398): Setting adb_enabled has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+D/BiometricService( 4753): canAuthenticate: User=0, Caller=0, Authenticators=255
+D/BiometricService/PreAuthInfo( 4753): Package: com.kcstream.cing Sensor ID: 0 Modality: 2 Status: 1
+D/BiometricService/PreAuthInfo( 4753): getCanAuthenticateInternal Modality: 2 AuthenticatorStatus: 1
+D/AuthService( 4753): canAuthenticate, userId: 0, callingUserId: 0, authenticators: 255, result: 0
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+I/pixel-thermal( 4636): ac:40.9 raw data: ac:40900 
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+W/HWUI    (18398): Image decoding logging dropped!
+I/m.kcstream.cing(18398): NativeAlloc concurrent copying GC freed 25MB AllocSpace bytes, 104(3384KB) LOS objects, 25% free, 11MB/15MB, paused 288us,79us total 180.289ms
+I/HWUI    (18398): Davey! duration=731ms; Flags=0, FrameTimelineVsyncId=68394, IntendedVsync=1691232562395, Vsync=1691465688743, InputEventId=0, HandleInputStart=1691476697500, AnimationStart=1691476699346, PerformTraversalsStart=1691476700154, DrawStart=1691648841094, FrameDeadline=1691249229061, FrameInterval=1691476267192, FrameStartTime=16651882, SyncQueued=1691700021214, SyncStart=1691700113637, IssueDrawCommandsStart=1691701281099, SwapBuffers=1691950850085, FrameCompleted=1691964118817, DequeueBufferDuration=48269, QueueBufferDuration=256038, GpuCompleted=1691964118817, SwapBuffersCompleted=1691952597393, DisplayPresentTime=0, CommandSubmissionCompleted=1691950850085, 
+W/System  (18398): A resource failed to call close. 
+W/System  (18398): A resource failed to call close. 
+W/System  (18398): A resource failed to call close. 
+W/System  (18398): A resource failed to call close. 
+W/System  (18398): A resource failed to call close. 
+W/System  (18398): A resource failed to call close. 
+W/System  (18398): A resource failed to call close. 
+W/System  (18398): A resource failed to call CursorWindow.close. 
+W/System  (18398): A resource failed to call CursorWrapperInner.close. 
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+W/System  (18398): A resource failed to call close. 
+I/m.kcstream.cing(18398): System.exit called, status: -1
+I/AndroidRuntime(18398): VM exiting with result code -1, cleanup skipped.
+W/InputDispatcher( 4753): channel '6a30964 com.kcstream.cing/com.kcstream.cing.activity.MainActivity' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher( 4753): channel '6a30964 com.kcstream.cing/com.kcstream.cing.activity.MainActivity' ~ Channel is unrecoverably broken and will be disposed!
+I/WindowManager( 4753): WINDOW DIED Window{6a30964 u0 com.kcstream.cing/com.kcstream.cing.activity.MainActivity}
+V/WindowManager( 4753): Unknown focus tokens, dropping reportFocusChanged
+I/ActivityManager( 4753): Process com.kcstream.cing (pid 18398) has died: fg  TOP 
+I/ImeTracker( 4753): com.kcstream.cing:648f9511: onRequestHide at ORIGIN_SERVER reason HIDE_REMOVE_CLIENT fromUser false
+D/ConnectivityService( 4753): releasing NetworkRequest [ REQUEST id=207, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10223 RequestorUid: 10223 RequestorPkg: com.kcstream.cing UnderlyingNetworks: Null] ] (release request)
+I/ImeTracker( 4753): com.kcstream.cing:648f9511: onCancelled at PHASE_SERVER_SHOULD_HIDE
+D/BoundBrokerSvc( 5542): onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+I/libprocessgroup( 4753): Removed cgroup /sys/fs/cgroup/uid_10223/pid_18398
+I/Zygote  ( 4401): Process 18398 exited cleanly (255)
+E/BpTransactionCompletedListener( 3834): Failed to transact (-32)
+W/ActivityTaskManager( 4753): Force removing ActivityRecord{127296539 u0 com.kcstream.cing/.activity.MainActivity t40}: app died, no saved state
+D/DisplayManagerService( 4753): Drop pending events for gone uid 10223
+V/BinderSender( 5982): Uid 10223 already starts
+V/WindowManagerShell( 5053): Transition requested (#39): android.os.BinderProxy@e34da8 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=40 effectiveUid=10223 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity } baseActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.MainActivity} topActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.MainActivity} origActivity=null realActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} numActivities=1 lastActiveTime=2869144 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@a6170c1} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 85 - 0, 0) topActivityInfo=ActivityInfo{21e0066 com.kcstream.cing.activity.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(282, 672 - 799, 1752) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 39 }
+V/BinderSender( 5982): Uid 10223 dead
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+D/InetDiagMessage( 4753): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+D/InetDiagMessage( 4753): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+D/InetDiagMessage( 4753): Destroyed live tcp sockets for uids={10223} in 4ms
+D/InetDiagMessage( 4753): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+D/InetDiagMessage( 4753): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+D/InetDiagMessage( 4753): Destroyed live tcp sockets for uids={20223} in 3ms
+W/ActivityManager( 4753): setHasOverlayUi called on unknown pid: 18398
+W/WindowOnBackDispatcher(10560): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(10560): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/BoundBrokerSvc( 5542): onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/RecentsView( 5357): onTaskRemoved: 40, not handling task stack changes
+V/BinderSender( 5982): Uid 10219 already starts
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/RecentsView( 5357): onTaskRemoved: 40, not handling task stack changes
+D/BackgroundInstallControlService( 4753): Package event received: 0
+D/ConnectivityService( 4753): requestNetwork for uid/pid:10169/5053 asUid: 10219 activeRequest: null callbackRequest: 208 [NetworkRequest [ REQUEST id=209, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+I/BpBinder( 3834): onLastStrongRef automatically unlinking death recipients: 
+D/WifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=209, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=209, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=209, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 4753): got request NetworkRequest [ REQUEST id=209, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10219 RequestorUid: 10169 RequestorPkg: com.android.systemui UnderlyingNetworks: Null] ]
+D/ConnectivityService( 4753): NetReassign [209 : null → 100] [c 1] [a 4] [i 3]
+I/rg.fossify.home(10560): AssetManager2(0x7d976b2ed8) locale list changing from [] to [en-US]
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+V/WindowManager( 4753): Sent Transition (#39) createdAt=11-23 21:45:34.652 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=40 effectiveUid=10223 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.kcstream.cing/.activity.SplashActivity } baseActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.MainActivity} topActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.MainActivity} origActivity=null realActivity=ComponentInfo{com.kcstream.cing/com.kcstream.cing.activity.SplashActivity} numActivities=1 lastActiveTime=2869144 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{f826798 Task{e93ac7c #40 type=standard A=10223:com.kcstream.cing}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 85 - 0, 0) topActivityInfo=ActivityInfo{e7d35da com.kcstream.cing.activity.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(282, 672 - 799, 1752) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 39 }
+V/WindowManager( 4753):     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+V/WindowManager( 4753):     info={id=39 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManager( 4753):         {WCT{RemoteToken{2e285cf Task{59c3e9 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x9256fd8 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1},
+V/WindowManager( 4753):         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{eb99e00 token=android.os.Binder@dbcfc83})/@0x7fd6367 sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0}
+V/WindowManager( 4753):     ]}
+V/WindowManagerShell( 5053): onTransitionReady(transaction=20413979559570)
+V/WindowManagerShell( 5053): onTransitionReady (#39) android.os.BinderProxy@e34da8: {id=39 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+V/WindowManagerShell( 5053):         {m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xc4a2b9e sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1},
+V/WindowManagerShell( 5053):         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{eb99e00 token=android.os.Binder@dbcfc83})/@0xf12e67f sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0}
+V/WindowManagerShell( 5053):     ]}
+V/WindowManagerShell( 5053): Playing animation for (#39) android.os.BinderProxy@e34da8@0
+V/ShellRecents( 5053): RecentsTransitionHandler.startAnimation: no controller found
+V/WindowManagerShell( 5053): Transition doesn't have explicit remote, search filters for match for {id=39 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xc4a2b9e sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1},{m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{eb99e00 token=android.os.Binder@dbcfc83})/@0xf12e67f sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0}]}
+V/WindowManagerShell( 5053):  Delegate animation for (#39) to null
+V/WindowManagerShell( 5053): start default transition animation, info = {id=39 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xc4a2b9e sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0 taskParent=-1},{m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{eb99e00 token=android.os.Binder@dbcfc83})/@0xf12e67f sb=Rect(0, 0 - 1080, 2340) eb=Rect(0, 0 - 1080, 2340) epz=Point(1080, 2340) d=0}]}
+V/WindowManagerShell( 5053): loadAnimation: anim=android.view.animation.AnimationSet@ca963aa animAttr=0x10 type=CLOSE isEntrance=true
+V/WindowManagerShell( 5053):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@9e27269
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+I/rg.fossify.home(10560): AssetManager2(0x7d976b8978) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976c12f8) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976b7078) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976c5ad8) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): NativeAlloc concurrent copying GC freed 539KB AllocSpace bytes, 7(980KB) LOS objects, 24% free, 5538KB/7384KB, paused 359us,51us total 111.726ms
+I/rg.fossify.home(10560): AssetManager2(0x7d976b76b8) locale list changing from [] to [en-US]
+V/WindowManagerShell( 5053): Transition animation finished (aborted=false), notifying core (#39) android.os.BinderProxy@e34da8@0
+V/WindowManager( 4753): Finish Transition (#39): created at 11-23 21:45:34.652 collect-started=0.183ms request-sent=0.728ms started=27.314ms ready=27.208ms sent=181.419ms finished=326.08ms
+V/WindowManagerShell( 5053): Track 0 became idle
+V/WindowManagerShell( 5053): All active transition animations finished
+W/UserManagerService( 4753): Requested status bar icon for non-badged user 0
+I/rg.fossify.home(10560): AssetManager2(0x7d976b8018) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976c7d38) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976b9918) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976b12b8) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976bce38) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976c6a78) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976c4b38) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976c9958) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976c6a78) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976b2ed8) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976b6d58) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976b8978) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976c12f8) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976d1c98) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976b92d8) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+D/LauncherApps(10560): getActivityList: No launchable activities found forpackageName=com.android.systemui, user=UserHandle{0}
+I/rg.fossify.home(10560): AssetManager2(0x7d976bce38) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976b12b8) locale list changing from [] to [en-US]
+D/LauncherApps(10560): getActivityList: No launchable activities found forpackageName=com.google.android.apps.wellbeing, user=UserHandle{0}
+I/rg.fossify.home(10560): AssetManager2(0x7d976c5ad8) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976d1658) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976b8018) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976c76f8) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+I/pixel-thermal( 4636): ac:40.9 raw data: ac:40900 
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976cce78) locale list changing from [] to [en-US]
+I/rg.fossify.home(10560): AssetManager2(0x7d976d2918) locale list changing from [] to [en-US]
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+E/BufferQueueProducer( 5053): [VRI[Toast]#57(BLAST Consumer)57](id:13bd00000039,api:0,p:-1,c:5053) disconnect: not connected (req=1)
+W/libEGL  ( 5053): EGLNativeWindowType 0x7c678552d0 disconnect failed
+W/HWUI    (10560): Image decoding logging dropped!
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976b9918) locale list changing from [] to [en-US]
+W/NotificationService( 4753): Toast already killed. pkg=com.kcstream.cing token=android.os.BinderProxy@b5b0aa9
+W/ActivityManager( 4753): pid 5053 com.android.systemui sent binder code 2 with flags 1 to frozen apps and got error -32
+W/ToastPresenter( 5053): Error calling back com.kcstream.cing to notify onToastHide()
+W/ToastPresenter( 5053): android.os.DeadObjectException
+W/ToastPresenter( 5053): 	at android.os.BinderProxy.transactNative(Native Method)
+W/ToastPresenter( 5053): 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+W/ToastPresenter( 5053): 	at android.app.ITransientNotificationCallback$Stub$Proxy.onToastHidden(ITransientNotificationCallback.java:143)
+W/ToastPresenter( 5053): 	at android.widget.ToastPresenter.hide(ToastPresenter.java:286)
+W/ToastPresenter( 5053): 	at com.android.systemui.toast.ToastUI$ToastOutAnimatorListener.onAnimationEnd(go/retraceme 56669f0db8aa247c2dc3bb6a1d0bc726b270393352632f6634e087c76c1eb0d5:5)
+W/ToastPresenter( 5053): 	at android.animation.Animator$AnimatorListener.onAnimationEnd(Animator.java:755)
+W/ToastPresenter( 5053): 	at android.animation.Animator$AnimatorCaller$$ExternalSyntheticLambda1.call(D8$$SyntheticClass:0)
+W/ToastPresenter( 5053): 	at android.animation.Animator.callOnList(Animator.java:713)
+W/ToastPresenter( 5053): 	at android.animation.Animator.notifyListeners(Animator.java:634)
+W/ToastPresenter( 5053): 	at android.animation.Animator.notifyEndListeners(Animator.java:659)
+W/ToastPresenter( 5053): 	at android.animation.Animator.completeEndAnimation(Animator.java:679)
+W/ToastPresenter( 5053): 	at android.animation.AnimatorSet.completeEndAnimation(AnimatorSet.java:1467)
+W/ToastPresenter( 5053): 	at android.animation.Animator.notifyEndListenersFromEndAnimation(Animator.java:668)
+W/ToastPresenter( 5053): 	at android.animation.AnimatorSet.endAnimation(AnimatorSet.java:1462)
+W/ToastPresenter( 5053): 	at android.animation.AnimatorSet.doAnimationFrame(AnimatorSet.java:1230)
+W/ToastPresenter( 5053): 	at android.animation.AnimationHandler.doAnimationFrame(AnimationHandler.java:396)
+W/ToastPresenter( 5053): 	at android.animation.AnimationHandler.-$$Nest$mdoAnimationFrame(Unknown Source:0)
+W/ToastPresenter( 5053): 	at android.animation.AnimationHandler$1.doFrame(AnimationHandler.java:106)
+W/ToastPresenter( 5053): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1564)
+W/ToastPresenter( 5053): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1575)
+W/ToastPresenter( 5053): 	at android.view.Choreographer.doCallbacks(Choreographer.java:1175)
+W/ToastPresenter( 5053): 	at android.view.Choreographer.doFrame(Choreographer.java:1100)
+W/ToastPresenter( 5053): 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1549)
+W/ToastPresenter( 5053): 	at android.os.Handler.handleCallback(Handler.java:991)
+W/ToastPresenter( 5053): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+W/ToastPresenter( 5053): 	at android.os.Looper.loopOnce(Looper.java:232)
+W/ToastPresenter( 5053): 	at android.os.Looper.loop(Looper.java:317)
+W/ToastPresenter( 5053): 	at android.app.ActivityThread.main(ActivityThread.java:8934)
+W/ToastPresenter( 5053): 	at java.lang.reflect.Method.invoke(Native Method)
+W/ToastPresenter( 5053): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:591)
+W/ToastPresenter( 5053): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:911)
+W/HWUI    (10560): Image decoding logging dropped!
+I/rg.fossify.home(10560): AssetManager2(0x7d976abb38) locale list changing from [] to [en-US]
+D/HWUI    (10560): --- Failed to create image decoder with message 'unimplemented'
+D/HWUI    (10560): --- Failed to create image decoder with message 'unimplemented'
+D/HWUI    (10560): --- Failed to create image decoder with message 'unimplemented'
+D/HWUI    (10560): --- Failed to create image decoder with message 'unimplemented'
+D/HWUI    (10560): --- Failed to create image decoder with message 'unimplemented'
+D/HWUI    (10560): --- Failed to create image decoder with message 'unimplemented'
+D/HWUI    (10560): --- Failed to create image decoder with message 'unimplemented'
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+E/WifiStaIfaceAidlImpl( 4753): getCachedScanData failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812
+I/pixel-thermal( 4636): ac:40.9 raw data: ac:40900 
+D/bauth_FPBAuthService( 4601): pcf : 0x1012, 0 ,2 ,0 ,0 ,0 ,2, 5.0.0.0
+D/bauth_FPBAuthService( 4601): thread id : 2, preenroll_flag : 0, nd cnt : 1, cso : 1, et : 0
+D/bauth_FPBAuthService( 4601): FPBAuthService, 10812

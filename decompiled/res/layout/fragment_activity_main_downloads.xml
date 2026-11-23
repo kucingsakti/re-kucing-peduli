@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.chip.Chip android:id="@id/chip_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opsi" android:layout_marginStart="16.0dip" app:chipIconSize="15.0dip" app:chipStartPadding="10.0dip" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll" />
+</RelativeLayout>

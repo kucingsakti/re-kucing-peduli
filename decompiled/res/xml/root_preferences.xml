@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Pemberitahuan">
+        <SwitchPreferenceCompat app:defaultValue="true" app:enabled="true" app:iconSpaceReserved="false" app:key="notification_alert" app:summary="Tampilkan notifikasi saat pemberitahuan masuk" app:title="Tampilkan notifikasi" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Keamanan">
+        <SwitchPreferenceCompat app:defaultValue="false" app:enabled="true" app:iconSpaceReserved="false" app:key="security_lock_app" app:summaryOff="Kunci aplikasi saat memulai dengan PIN (fitur screenshot juga akan dimatikan). Untuk menggunakan ini silahkan tutup dari recent app dan jalankan kembali" app:summaryOn="Kunci aplikasi saat memulai dengan PIN (fitur screenshot juga akan dimatikan). Untuk menggunakan ini silahkan tutup dari recent app dan jalankan kembali" app:title="Autentikasi dengan PIN" />
+        <SwitchPreferenceCompat app:defaultValue="false" app:enabled="true" app:iconSpaceReserved="false" app:key="security_lock_fingerprint" app:summaryOff="Kunci aplikasi saat memulai dengan fingerprint. Untuk menggunakan ini pastikan Autentikasi PIN dinyalakan terlebih dahulu" app:summaryOn="Kunci aplikasi saat memulai dengan fingerprint. Untuk menggunakan ini pastikan Autentikasi PIN dinyalakan terlebih dahulu" app:title="Autentikasi dengan Fingerprint" />
+        <SwitchPreferenceCompat app:defaultValue="false" app:enabled="true" app:iconSpaceReserved="false" app:key="disguise_app" app:summary="Samarkan nama dan ikon app pada Launcher. Jangan lupa kunci juga dengan PIN biar aman" app:title="Samarkan aplikasi" />
+        <Preference app:iconSpaceReserved="false" app:key="disguise_icon" app:summary="Ubah icon pada launcher pada saat mode penyamaran" app:title="Icon launcher" />
+    </PreferenceCategory>
+    <PreferenceCategory android:enabled="true" app:iconSpaceReserved="false" app:isPreferenceVisible="true" app:title="Penyimpanan">
+        <Preference android:key="backup_bookmark" app:iconSpaceReserved="false" app:title="Backup bookmark" />
+        <Preference android:key="restore_bookmark" app:iconSpaceReserved="false" app:title="Restore bookmark" />
+        <Preference android:key="storage_delete_cache" app:iconSpaceReserved="false" app:title="Hapus cache" />
+        <Preference android:key="storage_delete_all_files" app:iconSpaceReserved="false" app:title="Hapus semua file lokal dan bookmark" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Tentang">
+        <Preference android:key="tentang_app" app:iconSpaceReserved="false" app:title="Tentang aplikasi" />
+    </PreferenceCategory>
+</PreferenceScreen>

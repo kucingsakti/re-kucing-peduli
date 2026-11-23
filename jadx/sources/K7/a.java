@@ -1,0 +1,9 @@
+package K7;
+
+import android.os.Handler;
+import android.os.Looper;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class a {
+    public static final e a = new e(new Handler(Looper.getMainLooper()));
+}

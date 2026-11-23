@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_c_home" android:id="@id/bottom_navigation_recent" android:title="Depan" />
+    <item android:icon="@drawable/ic_c_alllist" android:id="@id/bottom_navigation_index" android:title="Indeks" />
+    <item android:icon="@drawable/ic_c_bookmark" android:id="@id/bottom_navigaiton_bookmark" android:title="Bookmark" />
+    <item android:icon="@drawable/ic_c_download" android:id="@id/bottom_navigation_downloads" android:title="Unduhan" />
+</menu>

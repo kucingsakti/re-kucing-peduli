@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_index_h" android:title="Hentai" />
+    <item android:id="@id/menu_index_2da" android:title="2D Animation" />
+    <item android:id="@id/menu_index_3dh" android:title="3D Hentai" />
+    <item android:id="@id/menu_index_jav" android:title="JAV" />
+    <item android:id="@id/menu_index_jav_cos" android:title="JAV Cosplay" />
+</menu>

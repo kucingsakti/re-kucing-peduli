@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+            <com.ferfalk.simplesearchview.SimpleSearchView android:id="@id/searchView" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/activity_main_search_placeholder" app:type="card" />
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ProgressBar android:id="@id/pb_progress" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerHorizontal="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/tx_no_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_no_data" android:layout_width="200.0dip" android:layout_height="160.0dip" android:layout_centerHorizontal="true" android:alpha="0.7" />
+            <com.google.android.material.textview.MaterialTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="Tidak ada hasil yang ditemukan" android:layout_below="@id/iv_no_data" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:id="@id/cv_series_ads" android:layout_width="fill_parent" android:layout_height="115.0dip">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cv_series_ads">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/search_recycler_view" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_history" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/textAppereance.body" android:textSize="15.0sp" android:textStyle="bold" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Riwayat pencarian" />
+                    <com.google.android.material.chip.ChipGroup android:id="@id/cg_search_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+                </LinearLayout>
+                <androidx.core.widget.NestedScrollView android:id="@id/ll_genres" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/textAppereance.body" android:textSize="15.0sp" android:textStyle="bold" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_main_search_search_with_genre" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_genre" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

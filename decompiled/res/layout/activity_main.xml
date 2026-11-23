@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/cl" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/appbar" android:background="@null" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip">
+                <ImageView android:id="@id/iv_home_logo" android:layout_width="100.0dip" android:layout_height="30.0dip" android:src="@drawable/logo" />
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.fragment.app.FragmentContainerView android:id="@id/nav_host_fragment" android:paddingBottom="?actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/navigations" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:labelVisibilityMode="labeled" app:menu="@menu/tabs" />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@id/navigation_view" android:layout_width="wrap_content" android:layout_height="fill_parent" app:headerLayout="@layout/drawer_activity_main" app:menu="@menu/drawer">
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/iv_nav_drawer_bottom" android:layout_width="230.0dip" android:layout_height="230.0dip" android:layout_marginBottom="-20.0dip" android:scaleType="fitXY" android:alpha="0.6" android:layout_marginEnd="-40.0dip" />
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

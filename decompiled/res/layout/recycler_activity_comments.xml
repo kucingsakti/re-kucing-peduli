@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="top" android:id="@id/avatar" android:background="@drawable/outline_rounded" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="10.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/textAppereance.body" android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="start" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Name" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <com.google.android.material.textview.MaterialTextView android:textSize="13.0sp" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Message" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <ImageView android:id="@id/iv_like" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/ic_rounded_thumbs_up" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/textAppereance.body" android:textSize="13.0sp" android:id="@id/tv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" app:layout_constraintLeft_toRightOf="@id/iv_like" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:id="@id/iv_dislike" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/ic_rounded_thumbs_down" android:layout_marginStart="20.0dip" app:layout_constraintLeft_toLeftOf="@id/tv_like" app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/textAppereance.body" android:textSize="13.0sp" android:id="@id/tv_dislike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" app:layout_constraintLeft_toRightOf="@id/iv_dislike" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

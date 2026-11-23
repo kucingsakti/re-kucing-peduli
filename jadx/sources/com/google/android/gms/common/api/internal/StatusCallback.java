@@ -1,0 +1,13 @@
+package com.google.android.gms.common.api.internal;
+
+import com.google.android.gms.common.annotation.KeepForSdk;
+import com.google.android.gms.common.api.Status;
+
+/* JADX INFO: loaded from: classes.dex */
+@KeepForSdk
+public class StatusCallback extends IStatusCallback.Stub {
+    @Override // com.google.android.gms.common.api.internal.IStatusCallback
+    public final void R(Status status) {
+        throw null;
+    }
+}

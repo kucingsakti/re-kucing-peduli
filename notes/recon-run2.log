@@ -1,0 +1,10 @@
+[*] device: Pixel 10 Pro
+Traceback (most recent call last):
+  File "/home/kali/Projects/re/com.kcstream.cing/frida/run_recon.py", line 16, in <module>
+    pid = dev.spawn([PKG])
+  File "/home/kali/.local/share/pipx/venvs/frida-tools/lib/python3.14/site-packages/frida/core.py", line 86, in wrapper
+    return f(*args, **kwargs)
+  File "/home/kali/.local/share/pipx/venvs/frida-tools/lib/python3.14/site-packages/frida/core.py", line 1029, in spawn
+    return self._impl.spawn(program, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+frida.TimedOutError: unexpectedly timed out while waiting for app to launch

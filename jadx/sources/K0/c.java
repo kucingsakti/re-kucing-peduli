@@ -1,0 +1,6 @@
+package K0;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface c {
+    O0.c a();
+}
