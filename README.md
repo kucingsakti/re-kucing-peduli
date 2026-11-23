@@ -37,7 +37,7 @@ was performed on the author's **own device** and **own installed copy** of the a
   client-side analysis of software running locally.
 - Decompiled/third-party artifacts are retained only as analysis evidence and remain the
   property of their respective owners.
-- Do not use any material here to infringe copyright, violate a service's terms, or against
+- Do not use any material here to infringe copyright, violate a service's terms, or target
   systems you do not own or are not authorised to test. **You are responsible for your use.**
 
 ---
